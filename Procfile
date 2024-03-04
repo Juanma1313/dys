@@ -1,0 +1,1 @@
+web: gunicorn dys_project.wsgi
