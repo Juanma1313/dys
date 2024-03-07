@@ -90,9 +90,6 @@ class ThingAdmin(SummernoteModelAdmin):
     # organize the list fields of Things
     list_display = ('title', 'slug', 'author', 'parent_view', 'created_on', 'updated_on', 'status')
     search_fields = ('title', 'description')
-    default_list_filters ={
-        "parent": "parent__isnull=True",
-    }
     list_filter = (
         #('parent', admin.EmptyFieldListFilter), 
         ('parent', admin.RelatedOnlyFieldListFilter), 
