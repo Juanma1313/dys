@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from django.db.models.functions import RowNumber
+import time
 
 
 STATUS = ((0, "Draft"), (1, "Published"))
@@ -20,8 +22,8 @@ class Thing(models.Model):
     #components = models.ManyToManyField( 'Thing', related_name='thing_components', blank=True)
     likes = models.ManyToManyField(User, related_name='thing_likes', blank=True)
 
-    #class Meta:
-    #    ordering = ["-created_on"]
+    class Meta:
+        ordering = ["created_on"]
 
     def __str__(self):
         return self.title
@@ -32,7 +34,13 @@ class Thing(models.Model):
 class Instructions(models.Model):
     '''Django database model for Instructions of the dys things '''
     thing = models.ForeignKey(Thing, on_delete=models.CASCADE)
-    instructions = models.TextField( blank=False, null=False)
+
+    def default_Instruction_title():
+        now=time.localtime()
+        return f"I-{now.tm_year}-{now.tm_mon}-{now.tm_mday}_{now.tm_hour}:{now.tm_min}:{now.tm_sec}"
+    title = models.CharField(max_length=200, default=default_Instruction_title)
+    instructions = models.TextField( blank=True, null=False)
+
 
     def __str__(self):
-        return str(self.instructions)
+        return str(self.title)
