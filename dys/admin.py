@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Thing, Instructions
 from django_summernote.admin import SummernoteModelAdmin, SummernoteModelAdminMixin
+from django.utils.html import mark_safe
 
 NO_PARENT_NAME = "ROOT"
 class ComponentInLine(SummernoteModelAdminMixin, admin.StackedInline):
@@ -27,7 +28,7 @@ class ComponentInLine(SummernoteModelAdminMixin, admin.StackedInline):
 
     # organize the admin inline forms fields for editting Components
     fieldsets = (
-        ('Componente', {
+        ('Component', {
             'fields': (('parent_view', 'title', 'author', 'status'),),
         }),
         ('Description', {
@@ -70,7 +71,7 @@ class ThingAdmin(SummernoteModelAdmin):
     save_on_top = True
 
     # creates wrappers for the read-only fields, so they can be part of fieldsets
-    readonly_fields = ('created', 'updated','parent_view')
+    readonly_fields = ('created', 'updated','parent_view', 'image_display')
 
     @admin.display(description="Created")
     def created(self, instance):
@@ -86,9 +87,20 @@ class ThingAdmin(SummernoteModelAdmin):
             return NO_PARENT_NAME
         else:
             return instance.parent
+    #image_display=AdminThumbnail(image_field='featured_image')
+    #image_display.short_description='Image'
+    # Prepare the featured_image to be displayed as image
+    @admin.display(description="Image")
+    def image_display_list(self, instance):
+        return mark_safe('<img src="{}" alt ="Thing Image" style="width:100px;height:100px;object-fit:scale-down;" />'.format(instance.featured_image.url))
+    @admin.display(description="Image")
+    def image_display(self, instance):
+        return mark_safe('<img src="{}" alt ="Thing Image" style="width:300px;object-fit:scale-down;" />'.format(instance.featured_image.url))
+
+    #image_display.short_description='Image'
 
     # organize the list fields of Things
-    list_display = ('title', 'slug', 'author', 'parent_view', 'created_on', 'updated_on', 'status')
+    list_display = ('title', 'image_display_list', 'author', 'parent_view', 'created_on', 'updated_on', 'status', )
     search_fields = ('title', 'description')
     list_filter = (
         #('parent', admin.EmptyFieldListFilter), 
@@ -109,10 +121,11 @@ class ThingAdmin(SummernoteModelAdmin):
         (None, {
             'fields': (
                 ('parent_view', 'title', 'author', 'status'),
-                ('slug', 'created', 'updated'), 'description',
+                ('slug', 'created', 'updated'), ('featured_image', 'image_display','description'),
                 ),
         }),
     )
+
     # allows to include components and instructions to be added to the edited Thing
     inlines = [ComponentInLine, InstructionsInLine]
 

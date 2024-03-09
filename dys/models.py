@@ -10,7 +10,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 class Thing(models.Model):
     '''Django database model for a Thing or a Component of the dys things '''
-    parent = models.ForeignKey('self', on_delete=models.CASCADE, blank=True, null=True, related_name='component')
+    parent = models.ForeignKey('self', on_delete=models.CASCADE, blank=True, null=True, related_name='components')
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey( User, on_delete=models.CASCADE, related_name="owner")
@@ -33,7 +33,7 @@ class Thing(models.Model):
 
 class Instructions(models.Model):
     '''Django database model for Instructions of the dys things '''
-    thing = models.ForeignKey(Thing, on_delete=models.CASCADE)
+    thing = models.ForeignKey(Thing, on_delete=models.CASCADE, related_name="instructions")
 
     def default_Instruction_title():
         now=time.localtime()
