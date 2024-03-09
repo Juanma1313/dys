@@ -194,7 +194,3 @@ class InstructionsAdmin(SummernoteModelAdmin):
     )
 
 
-
-#admin.site.register(Thing, ThingAdmin)
-#admin.site.register(Thing)
-#admin.site.register(Instructions)
