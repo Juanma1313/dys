@@ -41,6 +41,8 @@ class Instructions(models.Model):
     title = models.CharField(max_length=200, default=default_Instruction_title)
     instructions = models.TextField( blank=True, null=False)
 
+    class Meta:
+        ordering = ["title"]
 
     def __str__(self):
         return str(self.title)
