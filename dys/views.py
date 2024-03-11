@@ -19,9 +19,6 @@ class ThingDetail(View):
             liked = False
             if thing.likes.filter(id=self.request.user.id).exists():
                 liked = True
-            print(f"Components: {components}")
-            for step in instructions:
-                print(f"Step: {step.title}, Instructions:{step.instructions}")
             return render(
                 request,
                 "thing_detail.html",
