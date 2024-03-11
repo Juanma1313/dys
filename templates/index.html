@@ -13,11 +13,14 @@
             <div class="card mb-4">
               <div class="card-body">
                 <div class="image-container">
+                  {% load static %}                  
                   {% if "placeholder" in thing.featured_image.url %}
                   <img class="card-img-top"
-                    src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
+                    src="{% static 'image-not-available.png' %}" alt="No image available">
                   {% else %}
-                  <img class="card-img-top" src=" {{ thing.featured_image.url }}">
+                  <a href="{% url 'thing_detail' thing.slug %}" class="post-link">
+                    <img class="card-img-top featured-image" src=" {{ thing.featured_image.url }}" alt="Featured Image" >
+                  </a>
                   {% endif %} 
                   <div class="image-flash">
                       <p class="author">Author: {{ thing.author }}</p>

@@ -1,5 +1,5 @@
 body {
-    background-color: #F9FAFC;
+    background-color: #5e0704;
 }
 
 .brand {
@@ -139,4 +139,16 @@ body {
     color: #E84610;
     background: transparent;
     border: none;
+}
+
+/* Featured Image */
+.featured-image {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*summernote view */
+.note-float-left {
+    margin-right: 10px;
 }

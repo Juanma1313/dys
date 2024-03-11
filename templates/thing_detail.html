@@ -11,10 +11,11 @@
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
+                {% load static %}
                 {% if "placeholder" in thing.featured_image.url %}
-                <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" width="100%">
+                <img src="{% static 'image-not-available.png' %}" alt="No image available" width="100%">
                 {% else %}
-                <img src=" {{ thing.featured_image.url }}" width="100%">
+                <img src=" {{ thing.featured_image.url }}" alt="Featured image" class="featured-image">
                 {% endif %}
             </div>
         </div>
@@ -22,6 +23,7 @@
 </div>
 
 <div class="container">
+    <!-- VIEW THING DATA -->    
     <div class="row">
         <div class="col card mb-4  mt-3 left  top">
             <div class="card-body">
@@ -31,7 +33,6 @@
                     {{ thing.description | safe }}
                 </p>
                 <div class="row">
-
                     <div class="col-1">
                         <!-- The number of likes goes before the closing strong tag -->
                         <strong class="text-secondary"><i class="far fa-heart"></i> {{ thing.number_of_likes }} </strong>
@@ -58,6 +59,34 @@
             <hr>
         </div>
     </div>
+    <!-- VIEW COMPONENTS -->    
+    <div class="row">
+        <div class="col-md-8 card mb-4  mt-3 ">
+            <h3>Components:</h3>
+            <div class="card-body">
+                <!-- Loop inside the tags to iterate through all instructions -->
+                {% for component in components %}
+                <div class="components" style="padding: 10px;">
+                    <!-- The title for the instructions -->
+                    <p class="font-weight-bold">
+                        {{ component.title }}
+                    </p>
+                    <!-- The text for the instructions -->
+                    <p class="card-text ">
+                        {{ component.description | safe }}
+                    </p>
+                </div>
+                <!-- Instructions loop ends here -->
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <hr>
+        </div>
+    </div>
+    <!-- VIEW INSTRUCTIONS -->    
     <div class="row">
         <div class="col-md-8 card mb-4  mt-3 ">
             <h3>Instructions:</h3>
