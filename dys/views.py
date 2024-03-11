@@ -3,10 +3,6 @@ from django.views import generic, View
 from .models import Thing
 
 
-# Create your views here.
-def all_ok(request):
-    return HttpResponse("All OK")
-
 class ThingList(generic.ListView):
     model = Thing
     queryset = Thing.objects.filter(status=1, parent=None).order_by('-created_on')
