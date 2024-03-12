@@ -13,8 +13,8 @@
             <div class="card mb-4">
               <div class="card-body">
                 <div class="image-container">
-                  {% load static %}                  
                   {% if "placeholder" in thing.featured_image.url %}
+                  {% load static %}                  
                   <img class="card-img-top"
                     src="{% static 'image-not-available.png' %}" alt="No image available">
                   {% else %}

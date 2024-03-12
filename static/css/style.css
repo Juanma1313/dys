@@ -142,10 +142,16 @@ body {
 }
 
 /* Featured Image */
-.featured-image {
+.thing-image {
     height: 500px;
     width: 100%;
     object-fit: cover;
+}
+
+.component-image {
+    width:100px;
+    height:100px;
+    object-fit:scale-down;
 }
 
 /*summernote view */

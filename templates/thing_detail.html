@@ -11,11 +11,11 @@
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
-                {% load static %}
                 {% if "placeholder" in thing.featured_image.url %}
-                <img src="{% static 'image-not-available.png' %}" alt="No image available" width="100%">
+                {% load static %}
+                <img src="{% static 'image-not-available.png' %}" alt="No image available" class ="thing-image">
                 {% else %}
-                <img src=" {{ thing.featured_image.url }}" alt="Featured image" class="featured-image">
+                <img src=" {{ thing.featured_image.url }}" alt="Featured image" class="thing-image">
                 {% endif %}
             </div>
         </div>
@@ -28,7 +28,7 @@
         <div class="col card mb-4  mt-3 left  top">
             <div class="card-body">
                 <!-- The thing description goes inside the card-text. -->
-                <!-- Use the | safe filter inside the template tags -->
+                <!-- Use the | safe filter for html to be interpreted -->
                 <p class="card-text ">
                     {{ thing.description | safe }}
                 </p>
@@ -67,10 +67,24 @@
                 <!-- Loop inside the tags to iterate through all instructions -->
                 {% for component in components %}
                 <div class="components" style="padding: 10px;">
-                    <!-- The title for the instructions -->
-                    <p class="font-weight-bold">
+                    <!-- The image and the title for the component -->
+                    {% load custom_tags %}
+                    {% is_thing is_component_thing component.id as is_a_thing %}
+                    {% if is_a_thing %}
+                    <a href="{% url 'thing_detail' component.slug %}" class="post-link">
+                    {% endif %}
+                    <h4 class="font-weight-bold">
+                        {% if "placeholder" in component.featured_image.url %}
+                        {% load static %}
+                        <img src="{% static 'image-not-available.png' %}" alt="No Component image available" class="component-image">
+                        {% else %}
+                        <img src=" {{ component.featured_image.url }}" alt="Component Image" class="component-image">
+                        {% endif %}
                         {{ component.title }}
-                    </p>
+                    </h4>
+                    {% if is_a_thing %}
+                    </a>
+                    {% endif %}
                     <!-- The text for the instructions -->
                     <p class="card-text ">
                         {{ component.description | safe }}
@@ -95,7 +109,7 @@
                 {% for step in instructions %}
                 <div class="instructions" style="padding: 10px;">
                     <!-- The title for the instructions -->
-                    <p class="font-weight-bold">
+                    <h4 class="font-weight-bold">
                         {{ step.title }}
                     </p>
                     <!-- The text for the instructions -->

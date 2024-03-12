@@ -1,6 +1,6 @@
 from django.shortcuts import render, HttpResponse, get_object_or_404
 from django.views import generic, View
-from .models import Thing
+from .models import Thing, Instructions
 
 
 class ThingList(generic.ListView):
@@ -11,7 +11,8 @@ class ThingList(generic.ListView):
 
 class ThingDetail(View):
     def get(self, request, slug, *args, **kwargs):
-            queryset = Thing.objects.filter(status=1, parent = None)
+            print(f"ThingDetail(request={request}, slug={slug}, *args={args}, **kwargs={kwargs}):)")
+            queryset = Thing.objects.filter(status=1)
             thing = get_object_or_404(queryset, slug=slug)
             print(f"thing={thing.title}")
             instructions = thing.instructions.order_by("title")
@@ -19,6 +20,10 @@ class ThingDetail(View):
             liked = False
             if thing.likes.filter(id=self.request.user.id).exists():
                 liked = True
+            is_component_thing={}
+            for i in components:
+                 is_component_thing[i.id]=Instructions.objects.filter(thing=i.id).exists()
+                 print(f"component: id={i.id}, title={i.title}, \r\n\t description={i.description}, \r\n\t instructions={is_component_thing[i.id]}")
             return render(
                 request,
                 "thing_detail.html",
@@ -26,6 +31,7 @@ class ThingDetail(View):
                     "thing": thing,
                     "components": components,
                     "instructions": instructions,
+                    "is_component_thing": is_component_thing,
                     "liked": liked
                 },
             )    
