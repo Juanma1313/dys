@@ -24,9 +24,14 @@
 
     <!-- Navigation -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">DYS<span class="thin"> Site</span></span></span></a>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid ">
+            <a href="{% url 'home' %}">
+                {% load static %}                  
+                <img class="navbar-logo"
+                    src="{% static 'dys-logo.png' %}" alt="DYS Logo">
+                <span class="navbar-brand">DYS Site       .</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
