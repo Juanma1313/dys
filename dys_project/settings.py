@@ -41,7 +41,8 @@ ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS').split(",")
 
 INSTALLED_APPS = [
     'admin_interface',
-    'colorfield',    'django.contrib.admin',
+    'colorfield',    
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',

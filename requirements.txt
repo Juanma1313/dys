@@ -11,6 +11,7 @@ django-admin-interface==0.28.6
 django-allauth==0.61.1
 django-appconf==1.0.6
 django-colorfield==0.11.0
+django-fixture-media==0.1.4
 django-summernote==0.8.20.0
 gunicorn==21.2.0
 psycopg2==2.9.9

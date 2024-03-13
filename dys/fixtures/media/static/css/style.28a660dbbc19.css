@@ -1,0 +1,185 @@
+.navbar-logo {
+    width:100px;
+    height:100px;
+    object-fit:scale-down;
+}
+
+.navbar {
+    background-color:#186184;
+}
+
+.navbar-brand {
+    font-family: Lato, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ece908;
+}
+.navbar-text {
+    font-family: Lato, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #8bfdf7;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #8bfdf7;
+    &:hover,
+    &:focus {
+      color: #ffffff;
+    }    
+}
+
+
+.thin {
+    font-weight: 300;
+}
+
+.light-bg {
+    background-color: #fff;
+}
+
+.dark-bg {
+    background-color: #445261;
+}
+
+.main-bg {
+    background-color: #13aec538;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-flash {
+    position: absolute;
+    bottom: 5%;
+    min-width: 30%;
+    left: -2px;
+    background-color: #23BBBB;
+}
+
+.author {
+    color: black;
+    margin: 4px;
+    text-transform: uppercase;
+}
+
+.masthead {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    height: 33vh;
+    width: 100%;
+}
+
+.masthead-text {
+    background-color: #445261;
+    color: white;
+    position: relative;
+}
+
+.masthead-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.masthead-image:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 90%;
+    height: 100%;
+    width: 150%;
+    background: #445261;
+    -webkit-transform: skew(15deg);
+    -moz-transform: skew(15deg);
+    transform: skew(15deg);
+    z-index: 100;
+}
+
+.thing-link {
+    text-decoration: none;
+    color: #445261;
+}
+
+.thing-link:hover,
+.page-link {
+    color: #E84610;
+}
+
+.thing-title {
+    margin-top: 20%;
+    margin-left: 5%;
+}
+
+.thing-subtitle {
+    margin-left: 5%;
+    color: lightgray;
+}
+
+.btn-signup {
+    background-color: #23BBBB;
+    color: #fff;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #fff;
+    color: #23BBBB;
+}
+
+.link {
+    color: #23BBBB;
+    text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+    color: #445261;
+    text-decoration: underline;
+}
+
+.btn-like {
+    color: #E84610;
+    border: none;
+    background: transparent;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #E84610;
+    background: transparent;
+    border: none;
+}
+
+/* Featured Image */
+.index-thing-image {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.thing-image {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.component-image {
+    width:100px;
+    height:100px;
+    object-fit:scale-down;
+}
+
+/*summernote view */
+.note-float-left {
+    margin-right: 10px;
+}
