@@ -30,7 +30,7 @@
                 {% load static %}                  
                 <img class="navbar-logo"
                     src="{% static 'dys-logo.png' %}" alt="DYS Logo">
-                <span class="navbar-brand">DYS Site       .</span>
+                <span class="navbar-brand">DYS Site</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,19 +43,23 @@
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                        <a class="nav-link" href="{% url 'account_logout' %}">Sign Out</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+                        <a class="nav-link" href="{% url 'account_login' %}">Sign In</a>
                     </li>
                     {% endif %}
                 </ul>
-                <span class="navbar-text text-muted">
-                    HAHA, Developing like crazy
+                <span class="navbar-text">
+                    {% if user.is_authenticated %}
+                    Welcome {{user}}
+                    {% else %}
+                    Sign in to rate the content 
+                    {% endif %}
                 </span>
             </div>
         </div>
