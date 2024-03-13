@@ -40,6 +40,7 @@ ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS').split(",")
 # Application definition
 
 INSTALLED_APPS = [
+    'dys',
     'admin_interface',
     'colorfield',    
     'django.contrib.admin',
@@ -55,7 +56,6 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'django_summernote',
-    'dys',
 ]
 
 SITE_ID = 1
