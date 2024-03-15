@@ -6,7 +6,7 @@ cryptography==3.4.8
 defusedxml==0.7.1
 dj-database-url==2.1.0
 dj3-cloudinary-storage==0.0.6
-Django==3.2.24
+Django==4.2.11
 django-admin-interface==0.28.6
 django-allauth==0.61.1
 django-appconf==1.0.6
