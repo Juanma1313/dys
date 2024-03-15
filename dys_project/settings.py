@@ -15,12 +15,10 @@ import os
 import dj_database_url
 from django.contrib.messages import constants as messages
 
-DEBUG = False
-
 if os.path.isfile("env.py"):
     import env
 
-DEBUG = os.environ.get('DEVELOPMENT')
+DEBUG = os.environ.get('DEVELOPMENT', False)
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -146,8 +144,7 @@ AUTHENTICATION_BACKENDS = [
 # allauth custom configuration settings
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
-#ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
-ACCOUNT_EMAIL_VERIFICATION = 'none'
+ACCOUNT_EMAIL_VERIFICATION = os.environ.get('ACCOUNT_EMAIL_VERIFICATION', 'mandatory')
 ACCOUNT_PRESERVER_USERNAME_CASING = False
 ACCOUNT_USERNAME_REQUIRED = True
 
