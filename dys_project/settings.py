@@ -197,10 +197,15 @@ if DEBUG:
     import django
     print (f"Django Version: {django.get_version()}")
 
-# Fix Bug in django v3.2.24 - It cannot handle application password for smtp server
+# Fix Bug in django v3.9.18 - It cannot handle application password for smtp server
 #  Fix: django v4.2 solves the problem, but it is incompatible with 
 #       PostgreSQL V9 user in ElephantSQL service.
 # Note: This fix should be removed after migrating to Django v4.2
 if DEPLOYED:
     from shutil import copyfile
-    copyfile(src=os.path.join(BASE_DIR, "smtp_v4.2.py"), dst="/app/.heroku/python/lib/python3.12/site-packages/django/core/mail/backends/smtp.py")
+    try:
+        copyfile(src=os.path.join(BASE_DIR, "smtp_v4.2.py"), 
+                 dst="/app/.heroku/python/lib/python3.12/site-packages/django/core/mail/backends/smtp.py")
+    except Exception as e:
+        print ("Error: Exception={e}")
+
