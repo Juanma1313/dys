@@ -17,6 +17,10 @@ from django.contrib.messages import constants as messages
 
 if os.path.isfile("env.py"):
     import env
+    DEPLOYED=False
+else:
+    DEPLOYED=True
+
 
 DEBUG = os.environ.get('DEVELOPMENT', False)
 
@@ -197,5 +201,6 @@ if DEBUG:
 #  Fix: django v4.2 solves the problem, but it is incompatible with 
 #       PostgreSQL V9 user in ElephantSQL service.
 # Note: This fix should be removed after migrating to Django v4.2
-from shutil import copyfile
-copyfile(src=os.path.join(BASE_DIR, "smtp_v4.2.py"), dst="/app/.heroku/python/lib/python3.12/site-packages/django/core/mail/backends/smt /app/.heroku/python/lib/python3.12/site-packages/django/core/mail/backends/smtp.py")
+if DEPLOYED:
+    from shutil import copyfile
+    copyfile(src=os.path.join(BASE_DIR, "smtp_v4.2.py"), dst="/app/.heroku/python/lib/python3.12/site-packages/django/core/mail/backends/smt /app/.heroku/python/lib/python3.12/site-packages/django/core/mail/backends/smtp.py")
