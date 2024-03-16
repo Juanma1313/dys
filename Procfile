@@ -1,1 +1,1 @@
-web: gunicorn dys_project.wsgi
+web: gunicorn diy_project.wsgi

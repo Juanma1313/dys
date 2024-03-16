@@ -9,7 +9,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 
 class Thing(models.Model):
-    '''Django database model for a Thing or a Component of the dys things '''
+    '''Django database model for a Thing or a Component of the diy things '''
     parent = models.ForeignKey('self', on_delete=models.CASCADE, blank=True, null=True, related_name='components')
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
@@ -32,7 +32,7 @@ class Thing(models.Model):
         return self.likes.count()
 
 class Instructions(models.Model):
-    '''Django database model for Instructions of the dys things '''
+    '''Django database model for Instructions of the diy things '''
     thing = models.ForeignKey(Thing, on_delete=models.CASCADE, related_name="instructions")
 
     def default_Instruction_title():

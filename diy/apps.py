@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class DysConfig(AppConfig):
+class DiyConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'dys'
+    name = 'diy'

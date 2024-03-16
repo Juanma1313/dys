@@ -3,9 +3,9 @@
     "model": "admin_interface.theme",
     "pk": 2,
     "fields": {
-        "name": "DYS default",
+        "name": "DIY default",
         "active": true,
-        "title": "DYS Administration",
+        "title": "DIY Administration",
         "title_color": "#E2F55E",
         "title_visible": true,
         "logo": "media/admin-interface/logo/image-not-available_b7o1q0",
@@ -162,7 +162,7 @@
     "model": "contenttypes.contenttype",
     "pk": 13,
     "fields": {
-        "app_label": "dys",
+        "app_label": "diy",
         "model": "instructions"
     }
 },
@@ -170,7 +170,7 @@
     "model": "contenttypes.contenttype",
     "pk": 14,
     "fields": {
-        "app_label": "dys",
+        "app_label": "diy",
         "model": "thing"
     }
 },
@@ -218,8 +218,8 @@
     "model": "sites.site",
     "pk": 1,
     "fields": {
-        "domain": "juanma_dys.com",
-        "name": "juanma_dys.com"
+        "domain": "juanma_diy.com",
+        "name": "juanma_diy.com"
     }
 },
 {
@@ -394,7 +394,7 @@
     }
 },
 {
-    "model": "dys.instructions",
+    "model": "diy.instructions",
     "pk": 3,
     "fields": {
         "thing": 1,
@@ -403,7 +403,7 @@
     }
 },
 {
-    "model": "dys.instructions",
+    "model": "diy.instructions",
     "pk": 4,
     "fields": {
         "thing": 1,
@@ -412,7 +412,7 @@
     }
 },
 {
-    "model": "dys.instructions",
+    "model": "diy.instructions",
     "pk": 5,
     "fields": {
         "thing": 1,
@@ -421,7 +421,7 @@
     }
 },
 {
-    "model": "dys.instructions",
+    "model": "diy.instructions",
     "pk": 6,
     "fields": {
         "thing": 1,
@@ -430,7 +430,7 @@
     }
 },
 {
-    "model": "dys.instructions",
+    "model": "diy.instructions",
     "pk": 12,
     "fields": {
         "thing": 6,
@@ -439,7 +439,7 @@
     }
 },
 {
-    "model": "dys.instructions",
+    "model": "diy.instructions",
     "pk": 13,
     "fields": {
         "thing": 6,
@@ -448,7 +448,7 @@
     }
 },
 {
-    "model": "dys.instructions",
+    "model": "diy.instructions",
     "pk": 14,
     "fields": {
         "thing": 6,
@@ -457,7 +457,7 @@
     }
 },
 {
-    "model": "dys.instructions",
+    "model": "diy.instructions",
     "pk": 15,
     "fields": {
         "thing": 6,
@@ -466,7 +466,7 @@
     }
 },
 {
-    "model": "dys.instructions",
+    "model": "diy.instructions",
     "pk": 16,
     "fields": {
         "thing": 6,
@@ -475,7 +475,7 @@
     }
 },
 {
-    "model": "dys.instructions",
+    "model": "diy.instructions",
     "pk": 17,
     "fields": {
         "thing": 6,
@@ -484,7 +484,7 @@
     }
 },
 {
-    "model": "dys.instructions",
+    "model": "diy.instructions",
     "pk": 18,
     "fields": {
         "thing": 6,
@@ -493,7 +493,7 @@
     }
 },
 {
-    "model": "dys.instructions",
+    "model": "diy.instructions",
     "pk": 19,
     "fields": {
         "thing": 6,
@@ -502,7 +502,7 @@
     }
 },
 {
-    "model": "dys.instructions",
+    "model": "diy.instructions",
     "pk": 20,
     "fields": {
         "thing": 6,
@@ -511,7 +511,7 @@
     }
 },
 {
-    "model": "dys.instructions",
+    "model": "diy.instructions",
     "pk": 21,
     "fields": {
         "thing": 6,
@@ -520,7 +520,7 @@
     }
 },
 {
-    "model": "dys.instructions",
+    "model": "diy.instructions",
     "pk": 22,
     "fields": {
         "thing": 6,
@@ -529,7 +529,7 @@
     }
 },
 {
-    "model": "dys.instructions",
+    "model": "diy.instructions",
     "pk": 23,
     "fields": {
         "thing": 6,
@@ -538,7 +538,7 @@
     }
 },
 {
-    "model": "dys.instructions",
+    "model": "diy.instructions",
     "pk": 24,
     "fields": {
         "thing": 2,
@@ -547,7 +547,7 @@
     }
 },
 {
-    "model": "dys.instructions",
+    "model": "diy.instructions",
     "pk": 25,
     "fields": {
         "thing": 2,
@@ -556,7 +556,7 @@
     }
 },
 {
-    "model": "dys.instructions",
+    "model": "diy.instructions",
     "pk": 27,
     "fields": {
         "thing": 2,
@@ -1146,7 +1146,7 @@
     "fields": {
         "name": "Can add instructions",
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "codename": "add_instructions"
@@ -1158,7 +1158,7 @@
     "fields": {
         "name": "Can change instructions",
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "codename": "change_instructions"
@@ -1170,7 +1170,7 @@
     "fields": {
         "name": "Can delete instructions",
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "codename": "delete_instructions"
@@ -1182,7 +1182,7 @@
     "fields": {
         "name": "Can view instructions",
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "codename": "view_instructions"
@@ -1194,7 +1194,7 @@
     "fields": {
         "name": "Can add thing",
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "codename": "add_thing"
@@ -1206,7 +1206,7 @@
     "fields": {
         "name": "Can change thing",
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "codename": "change_thing"
@@ -1218,7 +1218,7 @@
     "fields": {
         "name": "Can delete thing",
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "codename": "delete_thing"
@@ -1230,7 +1230,7 @@
     "fields": {
         "name": "Can view thing",
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "codename": "view_thing"
@@ -1411,7 +1411,7 @@
     }
 },
 {
-    "model": "dys.thing",
+    "model": "diy.thing",
     "pk": 1,
     "fields": {
         "parent": null,
@@ -1429,7 +1429,7 @@
     }
 },
 {
-    "model": "dys.thing",
+    "model": "diy.thing",
     "pk": 2,
     "fields": {
         "parent": 1,
@@ -1451,7 +1451,7 @@
     }
 },
 {
-    "model": "dys.thing",
+    "model": "diy.thing",
     "pk": 3,
     "fields": {
         "parent": null,
@@ -1469,7 +1469,7 @@
     }
 },
 {
-    "model": "dys.thing",
+    "model": "diy.thing",
     "pk": 4,
     "fields": {
         "parent": 3,
@@ -1487,7 +1487,7 @@
     }
 },
 {
-    "model": "dys.thing",
+    "model": "diy.thing",
     "pk": 5,
     "fields": {
         "parent": 1,
@@ -1505,7 +1505,7 @@
     }
 },
 {
-    "model": "dys.thing",
+    "model": "diy.thing",
     "pk": 6,
     "fields": {
         "parent": null,
@@ -1527,7 +1527,7 @@
     }
 },
 {
-    "model": "dys.thing",
+    "model": "diy.thing",
     "pk": 7,
     "fields": {
         "parent": 6,
@@ -1545,7 +1545,7 @@
     }
 },
 {
-    "model": "dys.thing",
+    "model": "diy.thing",
     "pk": 8,
     "fields": {
         "parent": 6,
@@ -1563,7 +1563,7 @@
     }
 },
 {
-    "model": "dys.thing",
+    "model": "diy.thing",
     "pk": 9,
     "fields": {
         "parent": 6,
@@ -1581,7 +1581,7 @@
     }
 },
 {
-    "model": "dys.thing",
+    "model": "diy.thing",
     "pk": 10,
     "fields": {
         "parent": 6,
@@ -1599,7 +1599,7 @@
     }
 },
 {
-    "model": "dys.thing",
+    "model": "diy.thing",
     "pk": 11,
     "fields": {
         "parent": 6,
@@ -1617,7 +1617,7 @@
     }
 },
 {
-    "model": "dys.thing",
+    "model": "diy.thing",
     "pk": 12,
     "fields": {
         "parent": 6,
@@ -1635,7 +1635,7 @@
     }
 },
 {
-    "model": "dys.thing",
+    "model": "diy.thing",
     "pk": 13,
     "fields": {
         "parent": 6,
@@ -1653,7 +1653,7 @@
     }
 },
 {
-    "model": "dys.thing",
+    "model": "diy.thing",
     "pk": 14,
     "fields": {
         "parent": 13,
@@ -1671,7 +1671,7 @@
     }
 },
 {
-    "model": "dys.thing",
+    "model": "diy.thing",
     "pk": 15,
     "fields": {
         "parent": 13,
@@ -1689,7 +1689,7 @@
     }
 },
 {
-    "model": "dys.thing",
+    "model": "diy.thing",
     "pk": 16,
     "fields": {
         "parent": 13,
@@ -1707,7 +1707,7 @@
     }
 },
 {
-    "model": "dys.thing",
+    "model": "diy.thing",
     "pk": 17,
     "fields": {
         "parent": 13,
@@ -1725,7 +1725,7 @@
     }
 },
 {
-    "model": "dys.thing",
+    "model": "diy.thing",
     "pk": 18,
     "fields": {
         "parent": 13,
@@ -1743,7 +1743,7 @@
     }
 },
 {
-    "model": "dys.thing",
+    "model": "diy.thing",
     "pk": 19,
     "fields": {
         "parent": 13,
@@ -1761,7 +1761,7 @@
     }
 },
 {
-    "model": "dys.thing",
+    "model": "diy.thing",
     "pk": 20,
     "fields": {
         "parent": 13,
@@ -1779,7 +1779,7 @@
     }
 },
 {
-    "model": "dys.thing",
+    "model": "diy.thing",
     "pk": 21,
     "fields": {
         "parent": 13,
@@ -1859,7 +1859,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "1",
@@ -1877,7 +1877,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "2",
@@ -1895,7 +1895,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "2",
@@ -1913,7 +1913,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "3",
@@ -1931,7 +1931,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "3",
@@ -1949,7 +1949,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "4",
@@ -1967,7 +1967,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "5",
@@ -1985,7 +1985,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "6",
@@ -2003,7 +2003,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "1",
@@ -2021,7 +2021,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "2",
@@ -2039,7 +2039,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "3",
@@ -2057,7 +2057,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "4",
@@ -2075,7 +2075,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "3",
@@ -2093,7 +2093,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "1",
@@ -2111,7 +2111,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "1",
@@ -2129,7 +2129,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "1",
@@ -2147,7 +2147,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "1",
@@ -2165,7 +2165,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "2",
@@ -2183,7 +2183,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "4",
@@ -2219,7 +2219,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -2237,7 +2237,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -2255,7 +2255,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -2273,7 +2273,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -2291,7 +2291,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -2309,7 +2309,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "13",
@@ -2327,7 +2327,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "13",
@@ -2345,7 +2345,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -2363,7 +2363,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "21",
@@ -2381,7 +2381,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "3",
@@ -2399,7 +2399,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "21",
@@ -2417,7 +2417,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -2435,7 +2435,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "3",
@@ -2453,7 +2453,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "3",
@@ -2471,7 +2471,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "3",
@@ -2489,7 +2489,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "3",
@@ -2507,7 +2507,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "4",
@@ -2525,7 +2525,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "4",
@@ -2543,7 +2543,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "4",
@@ -2561,7 +2561,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "4",
@@ -2579,7 +2579,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "4",
@@ -2597,7 +2597,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "9",
@@ -2615,7 +2615,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "3",
@@ -2633,7 +2633,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "3",
@@ -2651,7 +2651,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "3",
@@ -2669,7 +2669,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "3",
@@ -2687,7 +2687,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "11",
@@ -2705,7 +2705,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "10",
@@ -2723,7 +2723,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "9",
@@ -2741,7 +2741,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "8",
@@ -2759,7 +2759,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "7",
@@ -2777,7 +2777,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "6",
@@ -2795,7 +2795,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "5",
@@ -2813,7 +2813,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "4",
@@ -2831,7 +2831,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "3",
@@ -2849,7 +2849,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -2867,7 +2867,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -2885,7 +2885,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -2903,7 +2903,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -2921,7 +2921,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -2939,7 +2939,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -2957,7 +2957,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -2975,7 +2975,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -2993,7 +2993,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "3",
@@ -3011,7 +3011,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "1",
@@ -3029,7 +3029,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "1",
@@ -3047,7 +3047,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "23",
@@ -3065,7 +3065,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "2",
@@ -3083,7 +3083,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "12",
@@ -3101,7 +3101,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "13",
@@ -3119,7 +3119,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "14",
@@ -3137,7 +3137,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "15",
@@ -3155,7 +3155,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "16",
@@ -3173,7 +3173,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "17",
@@ -3191,7 +3191,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "18",
@@ -3209,7 +3209,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "19",
@@ -3227,7 +3227,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "20",
@@ -3245,7 +3245,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "3",
@@ -3263,7 +3263,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "6",
@@ -3281,7 +3281,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "6",
@@ -3299,7 +3299,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "4",
@@ -3317,7 +3317,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "4",
@@ -3335,7 +3335,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "5",
@@ -3353,7 +3353,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "27",
@@ -3371,7 +3371,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "2",
@@ -3389,7 +3389,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -3407,7 +3407,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -3425,7 +3425,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -3443,7 +3443,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -3461,7 +3461,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -3479,7 +3479,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -3497,7 +3497,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -3515,7 +3515,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -3533,7 +3533,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -3551,7 +3551,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -3569,7 +3569,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -3587,7 +3587,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "18",
@@ -3605,7 +3605,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "17",
@@ -3623,7 +3623,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "12",
@@ -3641,7 +3641,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "13",
@@ -3659,7 +3659,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "14",
@@ -3677,7 +3677,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "15",
@@ -3695,7 +3695,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "15",
@@ -3713,7 +3713,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "16",
@@ -3731,7 +3731,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "18",
@@ -3749,7 +3749,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "19",
@@ -3767,7 +3767,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "19",
@@ -3785,7 +3785,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "19",
@@ -3803,7 +3803,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "20",
@@ -3821,7 +3821,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "20",
@@ -3839,7 +3839,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "21",
@@ -3857,7 +3857,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "21",
@@ -3875,7 +3875,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "21",
@@ -3893,7 +3893,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "22",
@@ -3911,7 +3911,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "22",
@@ -3929,7 +3929,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "23",
@@ -3947,7 +3947,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "23",
@@ -3965,7 +3965,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "12",
@@ -3983,7 +3983,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "13",
@@ -4001,7 +4001,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "1",
@@ -4023,7 +4023,7 @@
             "site"
         ],
         "object_id": "1",
-        "object_repr": "juanma_dys.com",
+        "object_repr": "juanma_diy.com",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
     }
@@ -4041,7 +4041,7 @@
             "theme"
         ],
         "object_id": "1",
-        "object_repr": "DYS",
+        "object_repr": "DIY",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Logo\", \"Favicon\", \"Title\"]}}]"
     }
@@ -4059,7 +4059,7 @@
             "theme"
         ],
         "object_id": "1",
-        "object_repr": "DYS",
+        "object_repr": "DIY",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
     }
@@ -4077,7 +4077,7 @@
             "theme"
         ],
         "object_id": "2",
-        "object_repr": "DYS 1",
+        "object_repr": "DIY 1",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -4095,7 +4095,7 @@
             "theme"
         ],
         "object_id": "2",
-        "object_repr": "DYS 1",
+        "object_repr": "DIY 1",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
     }
@@ -4113,7 +4113,7 @@
             "theme"
         ],
         "object_id": "1",
-        "object_repr": "DYS",
+        "object_repr": "DIY",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
     }
@@ -4131,7 +4131,7 @@
             "theme"
         ],
         "object_id": "2",
-        "object_repr": "DYS 1",
+        "object_repr": "DIY 1",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
     }
@@ -4149,7 +4149,7 @@
             "theme"
         ],
         "object_id": "1",
-        "object_repr": "DYS",
+        "object_repr": "DIY",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
     }
@@ -4167,7 +4167,7 @@
             "theme"
         ],
         "object_id": "2",
-        "object_repr": "DYS 1",
+        "object_repr": "DIY 1",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Title\", \"Color\", \"Background color\", \"Text color\", \"Background color\"]}}]"
     }
@@ -4185,7 +4185,7 @@
             "theme"
         ],
         "object_id": "2",
-        "object_repr": "DYS 1",
+        "object_repr": "DIY 1",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"Background color\"]}}]"
     }
@@ -4203,7 +4203,7 @@
             "theme"
         ],
         "object_id": "2",
-        "object_repr": "DYS 1",
+        "object_repr": "DIY 1",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"Logo\", \"Favicon\"]}}]"
     }
@@ -4221,7 +4221,7 @@
             "theme"
         ],
         "object_id": "2",
-        "object_repr": "DYS default",
+        "object_repr": "DIY default",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Logo\", \"Favicon\"]}}]"
     }
@@ -4239,7 +4239,7 @@
             "theme"
         ],
         "object_id": "2",
-        "object_repr": "DYS default",
+        "object_repr": "DIY default",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"Logo\", \"Favicon\"]}}]"
     }
@@ -4257,7 +4257,7 @@
             "theme"
         ],
         "object_id": "1",
-        "object_repr": "DYS",
+        "object_repr": "DIY",
         "action_flag": 3,
         "change_message": ""
     }
@@ -4271,7 +4271,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "1",
@@ -4289,7 +4289,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "1",
@@ -4307,7 +4307,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "1",
@@ -4325,7 +4325,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -4343,7 +4343,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -4361,7 +4361,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -4379,7 +4379,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -4397,7 +4397,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -4415,7 +4415,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -4433,7 +4433,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -4451,7 +4451,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -4469,7 +4469,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -4487,7 +4487,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -4505,7 +4505,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -4523,7 +4523,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -4541,7 +4541,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -4559,7 +4559,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -4577,7 +4577,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -4595,7 +4595,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -4613,7 +4613,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -4631,7 +4631,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -4649,7 +4649,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "18",
@@ -4667,7 +4667,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "18",
@@ -4685,7 +4685,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "18",
@@ -4703,7 +4703,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "18",
@@ -4721,7 +4721,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "19",
@@ -4739,7 +4739,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "19",
@@ -4757,7 +4757,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "20",
@@ -4775,7 +4775,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "20",
@@ -4793,7 +4793,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "20",
@@ -4811,7 +4811,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "21",
@@ -4829,7 +4829,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "21",
@@ -4847,7 +4847,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "22",
@@ -4865,7 +4865,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "22",
@@ -4883,7 +4883,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "22",
@@ -4901,7 +4901,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "23",
@@ -4919,7 +4919,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "23",
@@ -4937,7 +4937,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "instructions"
         ],
         "object_id": "23",
@@ -4955,7 +4955,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -4973,7 +4973,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -4991,7 +4991,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "6",
@@ -5009,7 +5009,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "13",
@@ -5027,7 +5027,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "13",
@@ -5045,7 +5045,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "13",
@@ -5063,7 +5063,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "13",
@@ -5081,7 +5081,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "13",
@@ -5099,7 +5099,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "10",
@@ -5117,7 +5117,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "4",
@@ -5135,7 +5135,7 @@
             "juanma"
         ],
         "content_type": [
-            "dys",
+            "diy",
             "thing"
         ],
         "object_id": "8",

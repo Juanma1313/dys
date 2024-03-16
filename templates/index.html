@@ -5,14 +5,14 @@
 <div class="container-fluid">
   <div class="row">
 
-      <!-- DYS Carousel -->
+      <!-- DIY Carousel -->
       <div class="container text-center my-3">
         <h2 class="font-weight-bold">Join us and enjoy our instructables</h2>
         <div class="row mx-auto my-auto justify-content-center">
             <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <div class="card">
                                 <div class="card-img">
                                     <img src="{% static 'diy-projects-01.jpg' %}" class="img-fluid">
@@ -22,7 +22,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <div class="card">
                                 <div class="card-img">
                                     <img src="{% static 'diy-projects-02.jpg' %}" class="img-fluid">
@@ -32,17 +32,17 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <div class="card">
                                 <div class="card-img">
                                     <img src="{% static 'diy-projects-03.jpg' %}" class="img-fluid">
                                 </div>
-                                <div class="card-img-overlay">OUR DYS PROJECTS ARE EASY</div>
+                                <div class="card-img-overlay">OUR DIY PROJECTS ARE EASY</div>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <div class="card">
                                 <div class="card-img">
                                     <img src="{% static 'diy-projects-04.jpg' %}" class="img-fluid">
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <div class="card">
                                 <div class="card-img">
                                     <img src="{% static 'diy-projects-05.jpg' %}" class="img-fluid">
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <div class="card">
                                 <div class="card-img">
                                     <img src="{% static 'diy-projects-06.jpg' %}" class="img-fluid">
@@ -94,7 +94,7 @@
 
 <div class="container-fluid">
   <div class="row">
-    <!-- DYS Things Column -->
+    <!-- DIY Things Column -->
     <div class="col-12 mt-3 left">
       <div class="row">
         {% for thing in thing_list %}
@@ -150,7 +150,7 @@
 let items = document.querySelectorAll('.carousel .carousel-item')
 
 items.forEach((el) => {
-    const minPerSlide = 4
+    const minPerSlide = 6
     let next = el.nextElementSibling
     for (var i=1; i<minPerSlide; i++) {
         if (!next) {
