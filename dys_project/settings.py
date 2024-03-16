@@ -164,7 +164,7 @@ USE_TZ = True
 
 # email configuration settings
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = os.environ.get('EMAIL_HOST')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
@@ -193,3 +193,9 @@ if DEBUG:
     import django
     print (f"Django Version: {django.get_version()}")
 
+# Fix Bug in django v3.2.24 - It cannot handle application password for smtp server
+#  Fix: django v4.2 solves the problem, but it is incompatible with 
+#       PostgreSQL V9 user in ElephantSQL service.
+# Note: This fix should be removed after migrating to Django v4.2
+from shutil import copyfile
+copyfile(src=os.path.join(BASE_DIR, "smtp_v4.2.py"), dst="/app/.heroku/python/lib/python3.12/site-packages/django/core/mail/backends/smt /app/.heroku/python/lib/python3.12/site-packages/django/core/mail/backends/smtp.py")
