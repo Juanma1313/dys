@@ -4,11 +4,18 @@
 {% load static %}
 <div class="container-fluid">
   <div class="row">
-
-      <!-- DIY Carousel -->
+      <!-- DIY Banner -->
       <div class="container text-center my-3">
-        <h2 class="font-weight-bold">Join us and enjoy our instructables</h2>
-        <div class="row mx-auto my-auto justify-content-center">
+        {% if request.user.is_authenticated %}
+        <a href="#main-content" >
+          <h2 class="font-weight-bold">Check out our projects and rate them</h2>
+        </a>
+        {% else %}
+        <a href="{% url 'account_login' %}" >
+          <h2 class="font-weight-bold">Join us and enjoy our constructable</h2>
+        </a>
+        {% endif %}
+        <div class="row mx-auto justify-content-center">
             <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
@@ -17,17 +24,17 @@
                                 <div class="card-img">
                                     <img src="{% static 'diy-projects-01.jpg' %}" class="img-fluid">
                                 </div>
-                                <div class="card-img-overlay">EXPAND YOUR MIND</div>
+                                <div class="text-banner text-banner-1">Our projects help to expand your mind</div>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="col-md-2">
                             <div class="card">
-                                <div class="card-img">
+                              <div class="text-banner text-banner-2">Experience the feeling of achievement</div>
+                              <div class="card-img">
                                     <img src="{% static 'diy-projects-02.jpg' %}" class="img-fluid">
                                 </div>
-                                <div class="card-img-overlay">FEEL ACOMPLISHMENT</div>
                             </div>
                         </div>
                     </div>
@@ -37,37 +44,37 @@
                                 <div class="card-img">
                                     <img src="{% static 'diy-projects-03.jpg' %}" class="img-fluid">
                                 </div>
-                                <div class="card-img-overlay">OUR DIY PROJECTS ARE EASY</div>
+                                <div class="text-banner text-banner-3">There is a project for everyone</div>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="col-md-2">
                             <div class="card">
-                                <div class="card-img">
+                              <div class="text-banner text-banner-4">A perfect activity for your free time</div>
+                              <div class="card-img">
                                     <img src="{% static 'diy-projects-04.jpg' %}" class="img-fluid">
                                 </div>
-                                <div class="card-img-overlay">THE BEST WAY TO SPEND YOUR TIME </div>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="col-md-2">
                             <div class="card">
-                                <div class="card-img">
+                              <div class="card-img">
                                     <img src="{% static 'diy-projects-05.jpg' %}" class="img-fluid">
                                 </div>
-                                <div class="card-img-overlay">ALL OUR PROJECTS ARE USEFUL</div>
-                            </div>
+                                <div class="text-banner text-banner-5">All our projects are fun and useful</div>
+                              </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="col-md-2">
-                            <div class="card">
+                          <div class="text-banner text-banner-6">Learn while building our projects</div>
+                          <div class="card">
                                 <div class="card-img">
                                     <img src="{% static 'diy-projects-06.jpg' %}" class="img-fluid">
                                 </div>
-                                <div class="card-img-overlay">LEARN WHILE BUILDING </div>
                             </div>
                         </div>
                     </div>
@@ -80,19 +87,25 @@
                 </a>
             </div>
         </div>
-        <h5 class="mt-2 fw-light">Sign In and rate our projects</h5>
     </div>
   </div>
-</div>
-<div class="container-fluid">
+  <!-- End of banner mark-->
   <div class="row">
-    <div class="col-12 mt-3 left">
-      <h2>EXPLORE OUR PROJECTS >></h2>
+    <div class="col">
+        <hr>
     </div>
   </div>
 </div>
 
 <div class="container-fluid">
+  <div class="row">
+    <div class="col-12 mt-3 left ">
+      <h2>EXPLORE OUR PROJECTS</h2>
+    </div>
+  </div>
+</div>
+
+<div id = "main-content" class="container-fluid">
   <div class="row">
     <!-- DIY Things Column -->
     <div class="col-12 mt-3 left">
@@ -119,15 +132,16 @@
                   <h2 class="card-title>">{{ thing.title }}</h2>
                 </a>
                 <hr />
-                <p class="card-text text-muted h6">{{ thing.created_on}} <i class="far fa-heart"></i>{{ thing.number_of_likes }} </p>
-
+                <p class="card-text text-muted h6">{{ thing.created_on}} <i class="far fa-heart"></i>
+                  <span>{{ thing.number_of_likes }}</span> 
+                </p>
               </div>
             </div>
           </div>
         {% if forloop.counter|divisibleby:3 %}
           </div>
         </div class="row">
-      {% endif %}
+        {% endif %}
         {% endfor %}
       </div>
     </div>

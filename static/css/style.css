@@ -62,14 +62,15 @@
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #23BBBB;
+    background-color: #2523bb;
 }
 
 .author {
-    color: black;
+    color: rgb(237, 243, 243);
     margin: 4px;
     text-transform: uppercase;
 }
+
 
 .masthead {
     margin-top: 10px;
@@ -224,3 +225,28 @@
   transform: translateX(0);
 }
 
+.text-banner {
+    font-family: Lato, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(228, 252, 141);
+    background-color: rgba(0, 0, 0, 0.445);
+    text-shadow: 1px  0px 0px white,
+    0px  1px 0px white,
+   -1px  0px 0px white,
+    0px -1px 0px white;
+    text-transform: uppercase;
+
+}
+.text-baner-1 {
+    bottom: 0;
+}
+
+.text-baner-2 {
+    width: 100%;
+    top: 50%;
+    bottom: 5%;
+    left: 0px;
+    right: 0px;
+    margin: 4px;
+}

@@ -2,15 +2,15 @@
 {% block content %}
 <div class="masthead">
     <div class="container">
+        <!-- THING HEADER (Title, image, author, date, etc)-->
         <div class="row g-0">
             <div class="col-md-6 masthead-text">
-                <!-- Thing title goes in these h1 tags -->
                 <h1 class="thing-title">{{ thing.title }} </h1>
                 <!-- Thing author goes before the | the thing's created date goes after -->
                 <p class="thing-subtitle">{{ thing.author }} | {{ thing.created_on }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
-                <!-- The featured image URL goes in the src attribute -->
+                <!-- Featured image  -->
                 {% if "placeholder" in thing.featured_image.url %}
                 {% load static %}
                 <img src="{% static 'image-not-available.png' %}" alt="No image available" class ="thing-image">
@@ -23,17 +23,16 @@
 </div>
 
 <div class="container">
-    <!-- VIEW THING DATA -->    
+    <!-- VIEW THING PRESENTATION -->    
     <div class="row">
         <div class="col card mb-4  mt-3 left  top">
             <div class="card-body">
-                <!-- The thing description goes inside the card-text. -->
-                <!-- Use the | safe filter for html to be interpreted -->
                 <p class="card-text ">
                     {{ thing.description | safe }}
                 </p>
                 <div class="row">
-                    <div class="col-1">
+                    <!--Thing Likes-->
+                    <div class="col-3">
                         <strong class="text-secondary">
                             {% if user.is_authenticated %}
                             <form class="d-inline" action="{% url 'thing_like' thing.slug %}" method="POST">
@@ -50,16 +49,17 @@
                             <span>{{ thing.number_of_likes }}</span>
                         </strong>
                     </div>
-                    <div class="col-2">
+                    <!--Thing Components count-->
+                    <div class="col-4">
                         {% with components.count as total_components %}
-                        <strong class="text-secondary">Components
+                        <strong class="text-secondary">Comp.
                         {{ total_components }}</strong>
                         {% endwith %}
                     </div>
-                    <div class="col-2">
+                    <!--Thing instructions count-->
+                    <div class="col-4">
                         {% with instructions.count as total_instructions %}
-                        <strong class="text-secondary">Instructions
-                            <!-- Our total_instructions variable goes before the closing strong tag -->
+                        <strong class="text-secondary">Instr.
                         {{ total_instructions }}</strong>
                         {% endwith %}
                     </div>
@@ -67,6 +67,7 @@
             </div>
         </div>
     </div>
+    <!-- Separator for thing content-->
     <div class="row">
         <div class="col">
             <hr>
