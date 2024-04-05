@@ -54,7 +54,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="user-options">
                         {% if request.user.is_authenticated %}
-                            {% if request.user.is_superuser %}
+                            {% if request.user.is_superuser or request.user.is_staff%}
                             <li><a href="/admin" class="dropdown-item">Admin</a></li>
                             {% endif %}
                             <!--<li><a href="{% url 'user' 'profile' %}" class="dropdown-item">My Profile</a></li> -->

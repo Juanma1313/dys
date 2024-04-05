@@ -236,17 +236,4 @@
    -1px  0px 0px white,
     0px -1px 0px white;
     text-transform: uppercase;
-
-}
-.text-baner-1 {
-    bottom: 0;
-}
-
-.text-baner-2 {
-    width: 100%;
-    top: 50%;
-    bottom: 5%;
-    left: 0px;
-    right: 0px;
-    margin: 4px;
 }
