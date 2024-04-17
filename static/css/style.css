@@ -198,7 +198,10 @@
     .carousel-inner .carousel-item > div:first-child {
         display: block;
     }
-}
+    .user-menu {
+        margin-right: 0;
+    }
+    }
 
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
@@ -208,7 +211,6 @@
 
 /* medium and up screens */
 @media (min-width: 768px) {
-    
     .carousel-inner .carousel-item-end.active,
     .carousel-inner .carousel-item-next {
       transform: translateX(16%);
@@ -218,6 +220,10 @@
     .carousel-inner .carousel-item-prev {
       transform: translateX(-16%);
     }
+    .user-menu {
+        margin-right: 5rem;
+    }
+    
 }
 
 .carousel-inner .carousel-item-end,
