@@ -19,7 +19,6 @@ class Thing(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
-    #components = models.ManyToManyField( 'Thing', related_name='thing_components', blank=True)
     likes = models.ManyToManyField(User, related_name='thing_likes', blank=True)
 
     class Meta:
