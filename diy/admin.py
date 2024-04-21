@@ -179,6 +179,7 @@ class InstructionsAdmin(SummernoteModelAdmin):
     list_display = ('parent_view', 'thing_title', 'image_display_list', 'title',)
     list_display_links=('title',)
     search_fields = ('title', 'instructions',)
+    search_fields = ('title', 'instructions',)
     list_filter = (
         #('parent', admin.EmptyFieldListFilter), 
         ('thing__parent', admin.RelatedOnlyFieldListFilter),
