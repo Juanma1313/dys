@@ -13,7 +13,7 @@ class Thing(models.Model):
     parent = models.ForeignKey('self', on_delete=models.CASCADE, blank=True, null=True, related_name='components')
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
-    author = models.ForeignKey( User, on_delete=models.CASCADE, related_name="owner")
+    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="owner")
     featured_image = CloudinaryField('image', default='placeholder')
     description = models.TextField(blank=True)
     updated_on = models.DateTimeField(auto_now=True)
@@ -30,15 +30,16 @@ class Thing(models.Model):
     def number_of_likes(self):
         return self.likes.count()
 
+
 class Instructions(models.Model):
     '''Django database model for Instructions of the diy things '''
     thing = models.ForeignKey(Thing, on_delete=models.CASCADE, related_name="instructions")
 
     def default_Instruction_title():
-        now=time.localtime()
+        now = time.localtime()
         return f"I-{now.tm_year}-{now.tm_mon}-{now.tm_mday}_{now.tm_hour}:{now.tm_min}:{now.tm_sec}"
     title = models.CharField(max_length=200, default=default_Instruction_title)
-    instructions = models.TextField( blank=True, null=False)
+    instructions = models.TextField(blank=True, null=False)
 
     class Meta:
         ordering = ["title"]

@@ -13,31 +13,32 @@ class ThingList(generic.ListView):
 
 
 class ThingDetail(View):
-    ''' Provides with the details for the selected thing. 
+    ''' Provides with the details for the selected thing.
     it also creates a dictionary is_component_thing that indicates if there are
     nested instructions in any of the Thing's Components'''
     def get(self, request, slug, *args, **kwargs):
-            queryset = Thing.objects.filter(status=1)
-            thing = get_object_or_404(queryset, slug=slug)
-            instructions = thing.instructions.order_by("title")
-            components = thing.components.filter(status=1).order_by("title")
-            liked = False
-            if thing.likes.filter(id=self.request.user.id).exists():
-                liked = True
-            is_component_thing={}
-            for i in components:
-                 is_component_thing[i.id]=Instructions.objects.filter(thing=i.id).exists()
-            return render(
-                request,
-                "thing_detail.html",
-                {
-                    "thing": thing,
-                    "components": components,
-                    "instructions": instructions,
-                    "is_component_thing": is_component_thing,
-                    "liked": liked
-                },
-            )   
+        queryset = Thing.objects.filter(status=1)
+        thing = get_object_or_404(queryset, slug=slug)
+        instructions = thing.instructions.order_by("title")
+        components = thing.components.filter(status=1).order_by("title")
+        liked = False
+        if thing.likes.filter(id=self.request.user.id).exists():
+            liked = True
+        is_component_thing = {}
+        for i in components:
+            is_component_thing[i.id] = Instructions.objects.filter(thing=i.id).exists()
+        return render(
+            request,
+            "thing_detail.html",
+            {
+                "thing": thing,
+                "components": components,
+                "instructions": instructions,
+                "is_component_thing": is_component_thing,
+                "liked": liked
+            },
+        )
+
 
 class ThingLike(View):
     ''' This view allows for adding/removing a user Like to/from a Thing.
@@ -51,12 +52,11 @@ class ThingLike(View):
 
         return HttpResponseRedirect(reverse('thing_detail', args=[slug]))
 
+
 class UserProfile(View):
     ''' Provides with the details for the user profile'''
     def get(self, request, form,  *args, **kwargs):
-            print (f"form={form}, user={request.user.__dict__}")
-            return render(
-                request,
-                "user_profile.html",
-            )   
-        
+        return render(
+            request,
+            "user_profile.html",
+        )

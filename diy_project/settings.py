@@ -17,9 +17,9 @@ from django.contrib.messages import constants as messages
 
 if os.path.isfile("env.py"):
     import env
-    DEPLOYED=False
+    DEPLOYED = False
 else:
-    DEPLOYED=True
+    DEPLOYED = True
 
 
 DEBUG = os.environ.get('DEVELOPMENT', False)
@@ -44,7 +44,7 @@ ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS').split(",")
 INSTALLED_APPS = [
     'diy',
     'admin_interface',
-    'colorfield',    
+    'colorfield',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -62,8 +62,8 @@ INSTALLED_APPS = [
 
 SITE_ID = 1
 
-LOGIN_REDIRECT_URL='/'
-LOGUT_REDIRECT_URL='/'
+LOGIN_REDIRECT_URL = '/'
+LOGUT_REDIRECT_URL = '/'
 
 MESSAGE_TAGS = {
         messages.DEBUG: 'alert-info',
@@ -83,7 +83,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     # Add the account middleware:
-    "allauth.account.middleware.AccountMiddleware",    
+    "allauth.account.middleware.AccountMiddleware",
 ]
 
 
@@ -107,16 +107,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'diy_project.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-#}
 DATABASES = {
    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
@@ -196,18 +186,17 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 if DEBUG:
     import django
-    print (f"Django Version: {django.get_version()}")
+    print(f"Django Version: {django.get_version()}")
 
 # Fix Bug in django v3.2.24 - It cannot handle application password for smtp server
-#  Fix: django v4.2 solves the problem, but it is incompatible with 
+#  Fix: django v4.2 solves the problem, but it is incompatible with
 #       PostgreSQL V9 user in ElephantSQL service.
 # Notes: This fix should be removed after migrating to Django v4.2
 #       This fix is no longer needed when upgaded to python v3.9.18 (Unknown reasons)
-#if DEPLOYED:
+# if DEPLOYED:
 #    from shutil import copyfile
 #    try:
-#        copyfile(src=os.path.join(BASE_DIR, "smtp_v4.2.py"), 
+#        copyfile(src=os.path.join(BASE_DIR, "smtp_v4.2.py"),
 #                 # dst="/app/.heroku/python/lib/python3.12/site-packages/django/core/mail/backends/smtp.py")
 #    except Exception as e:
 #        print (f"Error: Exception={e}")
-
