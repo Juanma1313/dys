@@ -21,17 +21,6 @@
     color: #8bfdf7;
 }
 
-.nav-link {
-    font-size: 1.5rem;
-    font-weight: 200;
-    color: #8bfdf7;
-    &:hover,
-    &:focus {
-      color: #ffffff;
-    }    
-}
-
-
 .thin {
     font-weight: 300;
 }
