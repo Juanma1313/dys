@@ -3,7 +3,7 @@
 
 ***
 
-## Introduction
+# Introduction
 
 The DIY site is intended to be a repository of small-scale construction
 projects, designed so that anyone can carry them out by following the
@@ -35,7 +35,7 @@ use of shopping carts, user profiles, payment gateways, etc.
 <span class="underline">Access the [website deployed on
 Heroku](https://dys-1c0dad79f0a0.herokuapp.com/)</span>
 
-## Table of Contents
+# Table of Contents
 
 - [Introduction](#introduction)
 
@@ -107,7 +107,7 @@ Heroku](https://dys-1c0dad79f0a0.herokuapp.com/)</span>
 
 ##   
 
-## User experience (UX)
+# User experience (UX)
 
 DIY Site aims to be a friendly public site for users to access DIY style
 projects that they can replicate. The presentation of the content is
@@ -119,9 +119,9 @@ creations. This administrative interface is geared towards a more
 functional purpose, so that project content can be easily edited and
 expanded.
 
-### Functional specifications
+## Functional specifications
 
-#### The User
+### The User
 
 There are four types of users segregated by their role and purpose.
 
@@ -134,7 +134,7 @@ There are four types of users segregated by their role and purpose.
   - **Administrator:** User that can validate users and perform all
     actions.
 
-#### Goals
+### Goals
 
   - For all users, the user interface should be minimalistic and
     intuitive
@@ -145,7 +145,7 @@ There are four types of users segregated by their role and purpose.
   - For Creators and administrators, The user interface should be clear,
     flexible and functional.
 
-#### Customer requirements for users
+### Customer requirements for users
 
 The following are the customer requirements that are part of the user
 stories list for the initial delivery iteration backlog.
@@ -182,9 +182,9 @@ stories list for the initial delivery iteration backlog.
 | 39   | 33    | Change state published/Draft a DIY project        |           |         | x       | x     |
 | 39   | 34    | Change state published/Draft a component          |           |         | x       | x     |
 
-####   
+###   
 
-#### Other requirements
+### Other requirements
 
   - There should be a main landing page to display the content.
 
@@ -203,7 +203,7 @@ stories list for the initial delivery iteration backlog.
 
   - The project should be develop under Agile methodology.
 
-#### Development plan
+### Development plan
 
 Since development must be managed under the agile methodology.
 `Epics`, and their corresponding `user stories` must be defined and,
@@ -214,17 +214,17 @@ points` are defined in order to better evaluate the development effort.
 The following information lists all these issues. Please follow the
 links to access the full information stored on github.
 
-##### #37 EPIC: Setup initial development environment
+#### [#37](https://github.com/Juanma1313/DYS/issues/37) EPIC: Setup initial development environment 
 
 As a **developer**, I can **setup initial environment**, so that
 **The website can be developed**
 
-###### #36 USER STORY: Create Development Environment
+##### [#36](https://github.com/Juanma1313/DYS/issues/36) USER STORY: Create Development Environment
 
 As **developer**, I can **setup the development environment**,
 so that **I can start developing the website**
 
-## Tasks
+###### Tasks
 
 - [x] Task 1 – Install Visual Studio Code in local environment
 
@@ -250,9 +250,9 @@ media storage
 - [x] Task 10 – Setup automatic deployment from Github on Heroku
 servers
 
-## Story Points: 8
+###### Story Points: 8
 
-###### #17 USER STORY: Administrate users
+##### [#17](https://github.com/Juanma1313/DYS/issues/17) USER STORY: Administrate users
 
 As **Administrator**, I can **Create/modify/delete user accounts
 and their privileges**, so that **I can assign who signs in on the
@@ -260,7 +260,7 @@ website and who can create or modify content**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -305,7 +305,7 @@ group
 **Then** I can add/delete/modify any privilege of any user and any
 group
 
-## Tasks
+###### Tasks
 
 - [x] Task 1 - Install and setup Django's allauth and its accounts
 and interfaces, extensions.
@@ -318,15 +318,15 @@ template
 - [x] Task 4 - Create `Content Creators` user group with necessary
 privileges for content creators
 
-## Story Points: 8
+###### Story Points: 8
 
-##### #39 EPIC: DIY Project creation and management
+#### [#39](https://github.com/Juanma1313/DYS/issues/39) EPIC: DIY Project creation and management
 
 As a **content creator**, I can **add/modify/delete DIY
 projects**, so that **the DIY Projects can be published and access
 by users in the website**
 
-###### #40 USER STORY: Register users as Content Creators
+##### [#40](https://github.com/Juanma1313/DYS/issues/40) USER STORY: Register users as Content Creators
 
 As **Administrator**, I can **Give privileges to users to became
 Content Creators**, so that **This content creators can handle DIY
@@ -334,7 +334,7 @@ projects**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -360,7 +360,7 @@ projects**
 
 **Then** I have sufficient privileges to perform those tasks
 
-## Tasks
+###### Tasks
 
 - [x] Task 1 Create ` Content Creators` users group
 
@@ -370,16 +370,16 @@ Creators` users group
 - [x] Task 3 Assign designated users to the ` Content Creators`
 users group
 
-## Story Points: 3
+###### Story Points: 3
 
-###### #23 USER STORY: Create a DIY project
+##### [#23](https://github.com/Juanma1313/DYS/issues/23) USER STORY: Create a DIY project
 
 As **content creator**, I can **Create a DIY project**, so that
 **I can publish it and share it on the website**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -410,7 +410,7 @@ Creator` group)
 **Then** The Created date, Modified_Date and Parent fields are
 automatically created for this DIY project
 
-## Tasks
+###### Tasks
 
 - [x] Task 1 - Allow the `Admin` option menu in the user menu in
 the base template for Staff users (from group `Content Creators`)
@@ -424,9 +424,9 @@ will be used to instantiate each `Thing` and each `Component`
 - [x] Task 4 - Create the Admin view for the DIY Project
 (`ThingAdmin`)
 
-## Story Points: 8
+###### Story Points: 8
 
-###### #24 USER STORY: Create DIY project details
+##### [#24](https://github.com/Juanma1313/DYS/issues/24) USER STORY: Create DIY project details
 
 As **content creator**, I can **create the DIY project
 details**, so that **project can have a featured image and
@@ -434,7 +434,7 @@ description**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -473,7 +473,7 @@ Creator` group)
 **Then** I need to use a Save button to permanently store the
 changes in the database
 
-## Tasks
+###### Tasks
 
 - [x] Task 1 - Install Django Summernote extension for adding
 embedded WSWG editing functionality.
@@ -484,16 +484,16 @@ accommodate all detail fields
 - [x] Task 3 - Add the modifiable fields to the fieldsets in the DIY
 Project Admin view (`ThingAdmin`) to allow updating of these fields.
 
-## Story Points: 8
+###### Story Points: 8
 
-###### #25 USER STORY: Create Instructions
+##### [#25](https://github.com/Juanma1313/DYS/issues/25) USER STORY: Create Instructions
 
 As **content creator**, I can **create a list of project
 instructions**, so that **the users can read and follow them**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -505,7 +505,7 @@ Creator` group)
 **Then** I can create a new `instructions` element that will be
 automatically assigned to the current DIY Project
 
-## Tasks
+###### Tasks
 
 - [x] Task 1 - Create the DIY Instructions class model
 (`Instructions`) that will be used to instantiate each
@@ -521,9 +521,9 @@ the instructions model
 DIY Project Admin view (`ThingAdmin`) to allow new instructions
 elements to be added as a list.
 
-## Story Points: 5
+###### Story Points: 5
 
-###### #26 USER STORY: Create component
+##### [#26](https://github.com/Juanma1313/DYS/issues/26) USER STORY: Create component
 
 As **content creator**, I can **create a list of components**,
 so that **a user can view and gather the building blocks to fulfil the
@@ -531,7 +531,7 @@ project**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -543,7 +543,7 @@ Creator` group)
 **Then** I can create a new component that will be automatically
 assigned to the current DIY Project
 
-## Tasks
+###### Tasks
 
 - [x] Task 1 - Modify the DIY Project object model 'Thing' to include
 a relation to itself as `components`
@@ -555,16 +555,16 @@ a relation to itself as `components`
 Component Admin view (`ComponentInLine`) to allow new components to be
 added as a list.
 
-## Story Points: 5
+###### Story Points: 5
 
-###### #27 USER STORY: Modify a project details
+##### [#27](https://github.com/Juanma1313/DYS/issues/27) USER STORY: Modify a project details
 
 As **content creator**, I can **modify the DIY project
 details**, so that **the project can be corrected or upgraded**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -584,20 +584,20 @@ Creator` group)
 
 **Then** I can edit a WSWG document to the description
 
-## Tasks
+###### Tasks
 
 - Built in #24
 
-## Story Points: 0
+###### Story Points: 0
 
-###### #28 USER STORY: Modify component
+##### [#28](https://github.com/Juanma1313/DYS/issues/28) USER STORY: Modify component
 
 As **content creator**, I can **modify the component details**,
 so that **the component can be corrected or upgraded**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -628,7 +628,7 @@ Creator` group)
 **Then** I need to use a `Save` button to permanently store the
 changes in the database
 
-## Tasks
+###### Tasks
 
 - built in #24
 
@@ -641,9 +641,9 @@ Component list.
 inline DIY Component Admin view (`ComponentInLine`) to allow updating
 of these fields.
 
-## Story Points:3
+###### Story Points:3
 
-###### #29 USER STORY: Modify instructions
+##### [#29](https://github.com/Juanma1313/DYS/issues29/) USER STORY: Modify instructions
 
 As **content creator**, I can **modify the project
 instructions**, so that **the project can be corrected or
@@ -651,7 +651,7 @@ upgraded**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -682,7 +682,7 @@ Creator` group)
 **Then** I need to use a `Save` button to permanently store the
 changes in the database
 
-## Tasks
+###### Tasks
 
 - [x] Task 1 - Add Summernote edit functionality to the
 `instructions` field in DIY Instructions Admin view
@@ -701,16 +701,16 @@ Project Details Instructions list.
 fieldsets in the inline DIY Instructions Admin view
 (`InstructionsInLine`) to allow updating of these fields.
 
-## Story Points: 5
+###### Story Points: 5
 
-###### #30 USER STORY: Delete a project
+##### [#30](https://github.com/Juanma1313/DYS/issues/30) USER STORY: Delete a project
 
 As **content creator**, I can **delete a DIY project**, so that
 **the project does no longer exist on the website**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -740,20 +740,20 @@ Creator` group)
 
 **Then** I will have to explicitly confirm the deletion
 
-## Tasks
+###### Tasks
 
 Built in #23
 
-## Story Points: 0
+###### Story Points: 0
 
-###### #31 USER STORY: Delete component
+##### [#31](https://github.com/Juanma1313/DYS/issues/31) USER STORY: Delete component
 
 As **content creator**, I can **delete a component**, so that
 **the component does no longer exist on the website**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -774,20 +774,20 @@ Creator` group)
 
 **Then** I will have to explicitly confirm the deletion
 
-## Tasks
+###### Tasks
 
 Built in #26
 
-## Story Points: 0
+###### Story Points: 0
 
-###### #32 USER STORY: Delete Instructions
+##### [#32](https://github.com/Juanma1313/DYS/issues/32) USER STORY: Delete Instructions
 
 As **content creator**, I can **delete project instructions**,
 so that **those instructions do no longer exist on the website**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -809,13 +809,13 @@ elements
 
 **Then** I will have to explicitly confirm the deletion
 
-## Tasks
+###### Tasks
 
 Built in #25
 
-## Story Points: 0
+###### Story Points: 0
 
-###### #33 USER STORY: Change project Published status
+##### [#33](https://github.com/Juanma1313/DYS/issues/33) USER STORY: Change project Published status
 
 As **content creator**, I can **change a project published status
 **, so that **the project is available to users when marked as
@@ -823,7 +823,7 @@ published or hidden when it is marked as draft**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -836,7 +836,7 @@ projects list
 **Then** I can toggle the published flag `Status` so that the DIY
 Project can be shown or hidden from viewing users.
 
-## Tasks
+###### Tasks
 
 - [x] Task 1 - Modify the DIY Project Admin view (`ThingAdmin`) to
 update the `status` field
@@ -844,9 +844,9 @@ update the `status` field
 - [x] Task 2 - Add `publish` and `set_as_draft` actions to the
 DIY Project Admin view
 
-## Story Points: 5
+###### Story Points: 5
 
-###### #34 USER STORY: Change component published status
+##### [#34](https://github.com/Juanma1313/DYS/issues/34) USER STORY: Change component published status
 
 As **content creator**, I can **change a component published
 status**, so that **the component information is available to users
@@ -854,7 +854,7 @@ when marked as published or hidden when it is marked as draft**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -867,26 +867,26 @@ Creator` group)
 Component from the DIY Project can be shown or hidden from viewing
 users.
 
-## Tasks
+###### Tasks
 
 - [x] Task 1 - Modify the DIY Component Admin view
 (`ComponentInLiner`) to update the `status` field
 
-## Story Points: 1
+###### Story Points: 1
 
-##### #41 EPIC: View DIY Projects
+#### [#41](https://github.com/Juanma1313/DYS/issues/41) EPIC: View DIY Projects
 
 As a **user**, I can **access the published DIY Projects**, so
 that **I can follow their instructions and replicate them**
 
-###### #19 USER STORY: View list of published projects
+##### [#19](https://github.com/Juanma1313/DYS/issues/19) USER STORY: View list of published projects
 
 As **user**, I can **view a list of published projects**, so
 that **I can choose what projects to view in detail**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -923,14 +923,14 @@ number of likes should be displayed
 **Then** I get redirected to the selected DIY Project details
 webpage
 
-## Tasks
+###### Tasks
 
 - [x] Task 1 - Add a paginated list of DIY Published projects to the
 index template
 
-## Story Points: 5
+###### Story Points: 5
 
-###### #20 USER STORY: View details of a DIY project
+##### [#20](https://github.com/Juanma1313/DYS/issues/20) USER STORY: View details of a DIY project
 
 As **user**, I can **Access the details of the selected DIY
 project**, so that **I can view the components and the
@@ -938,7 +938,7 @@ instructions**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -968,7 +968,7 @@ description
 
 **Then** I can see each instruction's title, and its content
 
-## Tasks
+###### Tasks
 
 - [x] Task 1 - Create the Django view and controllers to handle DIY
 details
@@ -984,16 +984,16 @@ related to the DIY Project
 - [x] Task 5 - Add to the details template a list of the instructions
 related to the DIY Project
 
-## Story Points: 8
+###### Story Points: 8
 
-###### #21 USER STORY: View Components
+##### [#21](https://github.com/Juanma1313/DYS/issues/21) USER STORY: View Components
 
 As **user**, I can **select and view a project component**, so
 that **I can access the details of the component**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -1005,27 +1005,27 @@ component from the components list
 **Then** if the component is also a DIY Project, I get redirected to
 this DIY Project detail website page
 
-## Tasks
+###### Tasks
 
 - [x] Task 3 - In the DIY Project details template, add a link to its
 DIY project detail for all the components related to the DIY Project and
 are DIY Projects themselves.
 
-## Story Points: 3
+###### Story Points: 3
 
-##### #38 EPIC: User registration
+#### [#38](https://github.com/Juanma1313/DYS/issues/38) EPIC: User registration
 
 As a **user**, I can **register myself on the website**, so that
 **hold my information about the website**
 
-###### #12 USER STORY: Register an account
+##### [#12](https://github.com/Juanma1313/DYS/issues/12) USER STORY: Register an account
 
 As **anonymous user**, I can **register myself**, so that **I
 can select my favourite content**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -1062,7 +1062,7 @@ registered)
 
 **Then** The new account is created
 
-## Tasks
+###### Tasks
 
 - [x] Task 1 - Adapt Django's allauth accounts application to allow
 user registration via email.
@@ -1070,16 +1070,16 @@ user registration via email.
 - [x] Task 2 - Create the sign-up option menu in the user menu in the
 base template
 
-## Story Points: 3
+###### Story Points: 3
 
-###### #13 USER STORY: Validate e-mail
+##### [#13](https://github.com/Juanma1313/DYS/issues/13) USER STORY: Validate e-mail
 
 As **user**, I can **validate my own e-mail**, so that **I can
 sign in the website**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -1114,7 +1114,7 @@ e-mail
 
 **Then** I am redirected to the sign-in webpage
 
-## Tasks
+###### Tasks
 
 - [x] Task 1 - Create an e-mail account for Django's automated e-mail
 (on Gmail, Yahoo, etc)
@@ -1122,16 +1122,16 @@ e-mail
 - [x] Task 1 - Adapt Django's allauth accounts application to allow
 e-mail validation.
 
-## Story Points: 3
+###### Story Points: 3
 
-###### #14 USER STORY: Sign in
+##### [#14](https://github.com/Juanma1313/DYS/issues/14) USER STORY: Sign in
 
 As **user**, I can **sign on the website**, so that **I can
 mark my favourite content**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -1169,7 +1169,7 @@ option in the user menu
 
 **Then** The user menu button should contain `Anonymous`
 
-## Tasks
+###### Tasks
 
 - [x] Task 1 - Adapt Django's allauth accounts application to allow
 user sign-in via email.
@@ -1177,16 +1177,16 @@ user sign-in via email.
 - [x] Task 2 - Create the `sign in` option menu in the user menu in
 the base template
 
-## Story Points: 3
+###### Story Points: 3
 
-###### #15 USER STORY: Change e-mail
+##### [#15](https://github.com/Juanma1313/DYS/issues/15) USER STORY: Change e-mail
 
 As **user**, I can **change my own e-mail address**, so that
 **I can sign in on the website with new e-mail address**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -1217,14 +1217,14 @@ e-mail addresses
 **Then** The selected e-mail address will be the new `Primary`
 that will be used for sign-in
 
-## Tasks
+###### Tasks
 
 - [x] Task 1 - Adapt Django's allauth accounts application to allow
 users to manage their e-mail addresses.
 
-## Story Points: 1
+###### Story Points: 1
 
-###### #16 USER STORY: Delete own account
+##### [#16](https://github.com/Juanma1313/DYS/issues/16) USER STORY: Delete own account
 
 As **user**, I can **Delete my own account**, so that **I can
 erase my information from the website**
@@ -1232,7 +1232,7 @@ erase my information from the website**
 Note: This user story is not included in the [DIY Site
 Backlog](https://github.com/Juanma1313/dys/milestone/1) iteration.
 
-###### #17 USER STORY: Administrate users
+##### [#17](https://github.com/Juanma1313/DYS/issues/17) USER STORY: Administrate users
 
 As **Administrator**, I can **Create/modify/delete user accounts
 and their privileges**, so that **I can assign who signs in on the
@@ -1240,7 +1240,7 @@ website and who can create or modify content**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -1285,7 +1285,7 @@ group
 **Then** I can add/delete/modify any privilege of any user and any
 group
 
-## Tasks
+###### Tasks
 
 - [x] Task 1 - Install and setup Django's allauth and its accounts
 and interfaces, extensions.
@@ -1298,9 +1298,9 @@ template
 - [x] Task 4 - Create `Content Creators` user group with necessary
 privileges for content creators
 
-## Story Points: 8
+###### Story Points: 8
 
-###### #18 USER STORY: Reset/Change password
+##### [#18](https://github.com/Juanma1313/DYS/issues/18) USER STORY: Reset/Change password
 
 As **user**, I can **Reset and change my own password**, so that
 **I can recover my account if I forget my password or enforce security
@@ -1308,7 +1308,7 @@ to my account**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -1350,14 +1350,14 @@ the change password webpage
 
 **Then** I will be redirected to the change password done webpage
 
-## Tasks
+###### Tasks
 
 - [x] Task 1 - Adapt Django's allauth accounts application to allow
 user password reset.
 
-## Story Points: 1
+###### Story Points: 1
 
-###### #22 USER STORY: Mark a project as favourite
+##### [#22](https://github.com/Juanma1313/DYS/issues/22) USER STORY: Mark a project as favourite
 
 As **a registered user**, I can **mark a project as favourite**,
 so that **I can keep a collection of favourite projects and the
@@ -1365,7 +1365,7 @@ projects get rated**
 
 ---
 
-## Acceptance Criteria
+###### Acceptance Criteria
 
 - Acceptance Criteria 1
 
@@ -1376,7 +1376,7 @@ projects get rated**
 **Then** I can click on the favourite icon to toggle the current DIY
 Project as favourite for me.
 
-## Tasks
+###### Tasks
 
 - [x] Task 1 - Modify the DIY Project class model to handle DIY
 likes.
@@ -1386,7 +1386,7 @@ likes
 
 - [x] Task 3 - Modify DIY Project detail template to handle DIY likes
 
-## Story Points: 5
+###### Story Points: 5
 
 #### Web Site Sketches
 
