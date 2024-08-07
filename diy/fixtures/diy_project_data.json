@@ -1,0 +1,715 @@
+[
+{
+    "model": "diy.thing",
+    "pk": 1,
+    "fields": {
+        "parent": null,
+        "title": "Terminator T-850 animatronic",
+        "slug": "t850",
+        "author": [
+            "juanma"
+        ],
+        "featured_image": "image/upload/v1710168898/rtikkxf1sawzbyv91vhj.jpg",
+        "description": "Animatronic Terminator model T850,&nbsp; all 3D Printable&nbsp;",
+        "updated_on": "2024-04-10T11:02:16.406Z",
+        "created_on": "2024-03-04T18:43:45.712Z",
+        "status": 1,
+        "likes": [
+            [
+                "juanma"
+            ],
+            [
+                "Giovanni"
+            ],
+            [
+                "admin"
+            ],
+            [
+                "ainhoahh"
+            ]
+        ]
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 2,
+    "fields": {
+        "parent": 1,
+        "title": "Terminator T-850 animatronic eye",
+        "slug": "t850eye",
+        "author": [
+            "juanma"
+        ],
+        "featured_image": "image/upload/v1709581769/nyouazmpe1tdegoa7i3p.jpg",
+        "description": "Terminator T850 Eye",
+        "updated_on": "2024-03-10T12:30:54.924Z",
+        "created_on": "2024-03-04T18:47:42.744Z",
+        "status": 1,
+        "likes": [
+            [
+                "juanma"
+            ],
+            [
+                "ainhoahh"
+            ]
+        ]
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 3,
+    "fields": {
+        "parent": null,
+        "title": "Baby Groot Webcam",
+        "slug": "Groot",
+        "author": [
+            "juanma"
+        ],
+        "featured_image": "image/upload/v1709579382/nzhj5gwdjsrus0hbtwvl.jpg",
+        "description": "<p style=\"text-align: justify;\"><img src=\"https://res.cloudinary.com/dfssxyagm/image/upload/v1/media/django-summernote/2024-03-05/836423b2-6f97-419a-ad55-3b1c87b2794a_lbaf4n\" style=\"text-align: center; width: 50%;\" class=\"\"></p><p style=\"text-align: justify;\">Convert a model of this beloved movies character into a stereographic webcam.</p><p style=\"text-align: justify;\">Once connected to a computer, you will be able to make it blink, and view everything in the room. Connect it to VR googles, and you will see through its eyes in 3D.</p><p></p>",
+        "updated_on": "2024-03-18T13:32:15.731Z",
+        "created_on": "2024-03-04T19:09:43.035Z",
+        "status": 1,
+        "likes": [
+            [
+                "ainhoahh"
+            ]
+        ]
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 4,
+    "fields": {
+        "parent": 3,
+        "title": "Baby Groot Animatronic Eye",
+        "slug": "grooteye",
+        "author": [
+            "juanma"
+        ],
+        "featured_image": "image/upload/v1709582155/hjbdkdbl4re7oaf6x3zd.jpg",
+        "description": "Animatronic eye with built-in camera specially designed for baby Groot",
+        "updated_on": "2024-03-13T13:16:23.703Z",
+        "created_on": "2024-03-04T19:55:56.429Z",
+        "status": 1,
+        "likes": []
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 5,
+    "fields": {
+        "parent": 1,
+        "title": "T850 Neck",
+        "slug": "t850neck",
+        "author": [
+            "juanma"
+        ],
+        "featured_image": "image/upload/v1709592939/pgg6q6cxtmcee3ywbm6l.jpg",
+        "description": "Terminator T-850 Neck",
+        "updated_on": "2024-03-13T07:37:06.840Z",
+        "created_on": "2024-03-04T22:55:39.375Z",
+        "status": 1,
+        "likes": []
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 6,
+    "fields": {
+        "parent": null,
+        "title": "Soldering Fumes Extractor",
+        "slug": "fumes",
+        "author": [
+            "Giovanni"
+        ],
+        "featured_image": "image/upload/v1709593697/vb84cyyvlg8twgznsgbk.webp",
+        "description": "<p style=\"text-align: center; \"><img src=\"https://res.cloudinary.com/dfssxyagm/image/upload/v1/media/django-summernote/2024-03-07/eb83045c-a4ea-4dd7-ac07-2b8c0c05b3b5_pjutny\" style=\"width: 50%;\"><br></p><p><b>Hi!</b>, I am Giovanni Aggiustatutto, and I am passionate about electronics, DIY and home automation. In today's guide, I will show you how I made an <font color=\"#000000\" style=\"\"><b>extractor for soldering iron fumes</b></font>. In fact, if you do electronics projects or with Arduino, at some point you will need to do some soldering. </p><p>I use the soldering iron in almost all of my projects, either to mount components on a board or to connect wires together. You will surely have noticed that the soldering iron produces some fumes, which are certainly not particularly healthy to breathe. </p><p>So, I decided to build an extractor for the fumes that are produced by the soldering iron, which is also capable of filtering them with an activated carbon filter. This project is quite simple and inexpensive, and in my opinion it is also very useful.</p>",
+        "updated_on": "2024-03-13T12:33:03.027Z",
+        "created_on": "2024-03-04T23:08:18.252Z",
+        "status": 1,
+        "likes": [
+            [
+                "juanma"
+            ],
+            [
+                "Giovanni"
+            ],
+            [
+                "testuser"
+            ],
+            [
+                "admin"
+            ],
+            [
+                "ainhoahh"
+            ]
+        ]
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 7,
+    "fields": {
+        "parent": 6,
+        "title": "Fumes Extractor Fan",
+        "slug": "fumesfan",
+        "author": [
+            "Giovanni"
+        ],
+        "featured_image": "image/upload/v1709593846/wodgebkmn27ii3yczj0a.webp",
+        "description": "<ul><li style=\"line-height: 1.2;\">High power 12V 10W 120x120x38 mm fan \r\n(Amazon: https://amzn.eu/d/hM4KwZk)</li></ul>",
+        "updated_on": "2024-03-13T12:33:03.047Z",
+        "created_on": "2024-03-04T23:10:46.643Z",
+        "status": 1,
+        "likes": []
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 8,
+    "fields": {
+        "parent": 6,
+        "title": "Fumes extractor Filter",
+        "slug": "fumesfilter",
+        "author": [
+            "Giovanni"
+        ],
+        "featured_image": "image/upload/v1710336214/u6xyxybxnqm3tfzjq4v7.webp",
+        "description": "<ul><li style=\"line-height: 1.2;\">An activated carbon filter sheet, made for kitchen hoods \r\n(Amazon: https://amzn.eu/d/blpe5Jc)</li></ul>",
+        "updated_on": "2024-03-13T13:23:35.254Z",
+        "created_on": "2024-03-04T23:13:54.222Z",
+        "status": 1,
+        "likes": []
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 9,
+    "fields": {
+        "parent": 6,
+        "title": "Fumes Extractor PSU",
+        "slug": "fumespsu",
+        "author": [
+            "Giovanni"
+        ],
+        "featured_image": "image/upload/v1709594034/dll1zo9mm40ycwilrbk4.webp",
+        "description": "<ul><li style=\"line-height: 1.2;\">12V 2A Power Supply Unit</li></ul>",
+        "updated_on": "2024-03-13T12:33:03.085Z",
+        "created_on": "2024-03-04T23:13:55.440Z",
+        "status": 1,
+        "likes": []
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 10,
+    "fields": {
+        "parent": 6,
+        "title": "Fumes Extractor Aluminium Profile",
+        "slug": "fumesprofile",
+        "author": [
+            "Giovanni"
+        ],
+        "featured_image": "image/upload/v1709594283/tlnhfe4xakyhvol2no6a.webp",
+        "description": "<ul><li style=\"line-height: 1.2;\">20x10 mm aluminium profile</li></ul>",
+        "updated_on": "2024-03-13T13:15:40.725Z",
+        "created_on": "2024-03-04T23:18:03.869Z",
+        "status": 1,
+        "likes": []
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 11,
+    "fields": {
+        "parent": 6,
+        "title": "Fumes Extractor Bolts and Nuts",
+        "slug": "fumesbolts",
+        "author": [
+            "Giovanni"
+        ],
+        "featured_image": "image/upload/placeholder",
+        "description": "<ul><li style=\"line-height: 1.2;\">2 M6x30 mm hexagonal bolts\r\n</li><li style=\"line-height: 1.2;\">4 M6 nuts\r\n</li><li style=\"line-height: 1.2;\">2 M6 bolts with round head\r\n</li><li style=\"line-height: 1.2;\">8 M3x20 mm bolts\r\n</li><li style=\"line-height: 1.2;\">8 M3 threaded inserts</li></ul>",
+        "updated_on": "2024-03-13T12:08:35.625Z",
+        "created_on": "2024-03-04T23:18:04.092Z",
+        "status": 1,
+        "likes": []
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 12,
+    "fields": {
+        "parent": 6,
+        "title": "Fumes Extractor Electrics",
+        "slug": "fumeselectrics",
+        "author": [
+            "Giovanni"
+        ],
+        "featured_image": "image/upload/placeholder",
+        "description": "<ul><li style=\"line-height: 1.2;\">Barrel DC connector\r\n</li><li style=\"line-height: 1.2;\">Blue LED with 1K resistor\r\n</li><li style=\"line-height: 1.2;\">Switch\r\n2-pin microphone cable</li></ul>",
+        "updated_on": "2024-03-13T12:13:08.298Z",
+        "created_on": "2024-03-04T23:18:04.338Z",
+        "status": 1,
+        "likes": []
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 13,
+    "fields": {
+        "parent": 6,
+        "title": "Fumes Extractor 3D Printed Parts",
+        "slug": "fumesprint3d",
+        "author": [
+            "Giovanni"
+        ],
+        "featured_image": "image/upload/v1709594494/j4tiwktovmrnje3vmuvb.webp",
+        "description": "<p style=\"line-height: 1.2;\">3D Printed parts to create an enclosure for the extractor.</p>\r\n<ul><li style=\"line-height: 1.2;\">\r\n<a href=\"https://content.instructables.com/static/3dviewer/index.html?svf=https://content.instructables.com/F4N/2G91/LSIY2E50/forge-derivs/f2772cca1/Cover.svf\" target=\"_blank\">Cover.stl</a></li><li style=\"line-height: 1.2;\"><a href=\"https://content.instructables.com/static/3dviewer/index.html?svf=https://content.instructables.com/FQL/GG4Y/LSIY2E59/forge-derivs/9526dd401/Fan-enclosure.svf\" target=\"_blank\">Fan-enclosure.stl</a><br></li><li style=\"line-height: 1.2;\">\r\n<a href=\"https://content.instructables.com/static/3dviewer/index.html?svf=https://content.instructables.com/FJ5/LEFG/LSIY2E5A/forge-derivs/1adb6bff1/Foot.svf\" target=\"_blank\">Foot.stl</a></li><li style=\"line-height: 1.2;\">\r\n<a href=\"https://content.instructables.com/static/3dviewer/index.html?svf=https://content.instructables.com/FWR/J5CF/LSIY2E5M/forge-derivs/e1d9ee271/Front-filter-grid.svf\" target=\"_blank\">Front-filter-grid.stl</a></li><li style=\"line-height: 1.2;\">\r\n<a href=\"https://content.instructables.com/static/3dviewer/index.html?svf=https://content.instructables.com/FSB/0D3B/LSIY2E5U/forge-derivs/2649b9021/Knob.svf\" target=\"_blank\">Knob.stl</a></li><li style=\"line-height: 1.2;\">\r\n<a href=\"https://content.instructables.com/static/3dviewer/index.html?svf=https://content.instructables.com/FGV/ZIJV/LSIY2E5V/forge-derivs/4c48fdfa1/Rear-border.svf\" target=\"_blank\">Rear-border.stl</a></li><li style=\"line-height: 1.2;\">\r\n<a href=\"https://content.instructables.com/static/3dviewer/index.html?svf=https://content.instructables.com/FR9/SXD3/LSIY2E6D/forge-derivs/1e6aa7281/Rear-filter-grid.svf\" target=\"_blank\">Rear-filter-grid.stl</a></li><li style=\"line-height: 1.2;\">\r\n<a href=\"https://content.instructables.com/static/3dviewer/index.html?svf=https://content.instructables.com/FR6/NTIO/LSIY2E6E/forge-derivs/00de938a1/Spacer.svf\" target=\"_blank\">Spacer.stl</a></li><li style=\"line-height: 1.2;\">\r\n<a href=\"https://content.instructables.com/static/3dviewer/index.html?svf=https://content.instructables.com/FB5/X1XA/LSIY2H86/forge-derivs/c8a58d3d1/Base.svf\" target=\"_blank\">Base.stl</a></li></ul>",
+        "updated_on": "2024-03-13T19:42:31.065Z",
+        "created_on": "2024-03-04T23:21:34.695Z",
+        "status": 1,
+        "likes": []
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 14,
+    "fields": {
+        "parent": 13,
+        "title": "Fumes Extractor Base",
+        "slug": "fumesbase",
+        "author": [
+            "Giovanni"
+        ],
+        "featured_image": "image/upload/placeholder",
+        "description": "Fumes extractor base",
+        "updated_on": "2024-03-04T23:31:06.713Z",
+        "created_on": "2024-03-04T23:31:06.713Z",
+        "status": 0,
+        "likes": []
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 15,
+    "fields": {
+        "parent": 13,
+        "title": "Fumes Extractor cover",
+        "slug": "fumescover",
+        "author": [
+            "Giovanni"
+        ],
+        "featured_image": "image/upload/placeholder",
+        "description": "Fumes extractor base cover",
+        "updated_on": "2024-03-04T23:31:06.880Z",
+        "created_on": "2024-03-04T23:31:06.880Z",
+        "status": 0,
+        "likes": []
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 16,
+    "fields": {
+        "parent": 13,
+        "title": "Fumes Extractor foot",
+        "slug": "fumesfoot",
+        "author": [
+            "Giovanni"
+        ],
+        "featured_image": "image/upload/placeholder",
+        "description": "Fumes extractor enclosure base foot x 4",
+        "updated_on": "2024-03-04T23:38:00.099Z",
+        "created_on": "2024-03-04T23:31:07.056Z",
+        "status": 0,
+        "likes": []
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 17,
+    "fields": {
+        "parent": 13,
+        "title": "Fumes Extractor encolsure",
+        "slug": "fumesenclosure",
+        "author": [
+            "Giovanni"
+        ],
+        "featured_image": "image/upload/placeholder",
+        "description": "Fumes extractor enclosure for the fan",
+        "updated_on": "2024-03-04T23:31:07.231Z",
+        "created_on": "2024-03-04T23:31:07.231Z",
+        "status": 0,
+        "likes": []
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 18,
+    "fields": {
+        "parent": 13,
+        "title": "Fumes Extractor Front Grid",
+        "slug": "fumesfrontgrid",
+        "author": [
+            "Giovanni"
+        ],
+        "featured_image": "image/upload/placeholder",
+        "description": "Fumes extractor Front filter grid",
+        "updated_on": "2024-03-04T23:38:00.260Z",
+        "created_on": "2024-03-04T23:38:00.260Z",
+        "status": 0,
+        "likes": []
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 19,
+    "fields": {
+        "parent": 13,
+        "title": "Fumes Extractor back Grid",
+        "slug": "fumesbackgrid",
+        "author": [
+            "Giovanni"
+        ],
+        "featured_image": "image/upload/placeholder",
+        "description": "Fumes extractor back grid",
+        "updated_on": "2024-03-04T23:38:00.510Z",
+        "created_on": "2024-03-04T23:38:00.510Z",
+        "status": 0,
+        "likes": []
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 20,
+    "fields": {
+        "parent": 13,
+        "title": "Fumes Extractor Border",
+        "slug": "fumesborder",
+        "author": [
+            "Giovanni"
+        ],
+        "featured_image": "image/upload/placeholder",
+        "description": "Fumes extractor rear border",
+        "updated_on": "2024-03-04T23:38:00.709Z",
+        "created_on": "2024-03-04T23:38:00.709Z",
+        "status": 0,
+        "likes": []
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 21,
+    "fields": {
+        "parent": 13,
+        "title": "Fumes Extractor Knob",
+        "slug": "fumesknob",
+        "author": [
+            "Giovanni"
+        ],
+        "featured_image": "image/upload/placeholder",
+        "description": "<p>Fumes extractor knob x 2&nbsp;&nbsp;<span style=\"font-family: &quot;Arial Black&quot;; font-size: 18px; background-color: rgb(255, 255, 0); color: rgb(0, 0, 0);\">This is an example of formatted text</span></p><p><font color=\"#000000\" style=\"background-color: rgb(255, 255, 0);\"><span style=\"font-size: 18px; font-family: &quot;Arial Black&quot;;\"><br></span></font></p>",
+        "updated_on": "2024-03-05T06:28:25.868Z",
+        "created_on": "2024-03-04T23:38:01.208Z",
+        "status": 0,
+        "likes": []
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 22,
+    "fields": {
+        "parent": null,
+        "title": "Reed Dryer for Bassoon",
+        "slug": "reed-dryer-for-bassoon",
+        "author": [
+            "juanma"
+        ],
+        "featured_image": "image/upload/v1713454892/flewxqe39e3b77pwgkpq.png",
+        "description": "<p><img src=\"https://res.cloudinary.com/dfssxyagm/image/upload/v1/media/django-summernote/2024-04-18/15ccd7a2-666c-473f-9979-e8814d3d5c2e_umuwz1\" alt=\"Featured Image\" style=\"width: 25%;\"><br></p><p style=\"text-align: justify;\"><b>Hi</b>, I'm Juanma, and I'm passionate about musical instruments. In today's guide, I'll show you how to make a <b>Bassoon Reed Dryer.</b> In fact, if you play the bassoon you will realize how often the reeds wear out, and these are not cheap at all. So, chances are, you'll want to make your own. And that's where this project comes in to help you.</p><p style=\"text-align: justify;\">The bassoon reed dryer is an essential tool for bassoon players who make their own reeds. Once the reed has been finished and varnished, it is placed on one of the spikes or mandrels, where it is left to rest until it is ready for use. The effect is that the reed is not deformed in the embouchure or in the opening of the tudel, maintaining the right shape for its final use.</p><p style=\"text-align: justify;\"><b>I hope you find it easy to build and useful.</b></p>",
+        "updated_on": "2024-04-22T14:15:52.524Z",
+        "created_on": "2024-04-18T15:41:33.219Z",
+        "status": 1,
+        "likes": [
+            [
+                "juanma"
+            ],
+            [
+                "Creator"
+            ]
+        ]
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 23,
+    "fields": {
+        "parent": 22,
+        "title": "Reed Dryer Base",
+        "slug": "reed-dryer-base",
+        "author": [
+            "juanma"
+        ],
+        "featured_image": "image/upload/v1713456346/nh8prvgmcv7r4fl6yfzb.png",
+        "description": "<ul><li>1 x Reed Dryer Base</li></ul>",
+        "updated_on": "2024-04-18T16:54:08.985Z",
+        "created_on": "2024-04-18T16:02:59.399Z",
+        "status": 1,
+        "likes": []
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 24,
+    "fields": {
+        "parent": 22,
+        "title": "Reed Dryer Mandrel",
+        "slug": "reed-dryer-mandrel",
+        "author": [
+            "juanma"
+        ],
+        "featured_image": "image/upload/v1713456372/gkkr5joqu0fibben7u5r.png",
+        "description": "<ul><li>12 x Reed Dryer Mandrel</li></ul>",
+        "updated_on": "2024-04-18T17:10:29.649Z",
+        "created_on": "2024-04-18T16:05:05.105Z",
+        "status": 1,
+        "likes": []
+    }
+},
+{
+    "model": "diy.thing",
+    "pk": 25,
+    "fields": {
+        "parent": 22,
+        "title": "Reed Dryer Screws",
+        "slug": "reed-dryer-screw",
+        "author": [
+            "Creator"
+        ],
+        "featured_image": "image/upload/placeholder",
+        "description": "<ul><li>12 x screw for wood size 10x2mm&nbsp;</li></ul>",
+        "updated_on": "2024-04-18T17:10:58.849Z",
+        "created_on": "2024-04-18T17:03:54.632Z",
+        "status": 1,
+        "likes": []
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 3,
+    "fields": {
+        "thing": 1,
+        "title": "Step 01: 3D Print",
+        "instructions": "<span style=\"font-family: &quot;Times New Roman&quot;; font-size: 10px;\">Print all the components</span>"
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 4,
+    "fields": {
+        "thing": 1,
+        "title": "Step 02: Build Eyes",
+        "instructions": "<span style=\"font-family: &quot;Times New Roman&quot;; font-size: 10px;\">Build 2 sets of eyes</span>"
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 5,
+    "fields": {
+        "thing": 1,
+        "title": "Step 04: Head Bottom",
+        "instructions": "<span style=\"font-family: &quot;Times New Roman&quot;; font-size: 10px;\">Build the bottom part of the head with pieces 1 and 3</span>"
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 6,
+    "fields": {
+        "thing": 1,
+        "title": "Step 03: Mout Eyes",
+        "instructions": "<span style=\"font-family: &quot;Times New Roman&quot;; font-size: 10px;\">Place eyes inside the bottom head. One eye in each eye sockets</span>"
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 12,
+    "fields": {
+        "thing": 6,
+        "title": "Step 01: Choosing the Fan",
+        "instructions": "<p><img src=\"https://res.cloudinary.com/dfssxyagm/image/upload/v1/media/django-summernote/2024-03-07/04085583-7022-4726-9eba-eb4bb7ea9378_qilznq\" style=\"width: 50%; float: left;\" class=\"note-float-left\"></p><p style=\"text-align: justify; line-height: 1.2; color: rgb(85, 85, 85); font-family: myriad-pro, helvetica, arial, sans-serif; font-size: 14px;\">This project has already been done by others in many variations, but all of them in my opinion have a problem: generally makers use PC fans in order to remove the soldering iron fumes, but they are not powerful enough. Due to this the fume extractor has to be very close to the area where we are soldering, making it inconvenient to use, and in the end, we end up never using it. For this reason, for my fume extractor I bought a very powerful fan, that is able to remove the soldering fumes even if the extractor is around 30 cm from the soldering iron. Of course, the fact that the fan is very powerful also means that it is far more noisy than a PC fan, so that is something that needs to be taken into account. The fan runs on 12V, and having a power of 10W consumes about 800 mA</p><hr><p style=\"text-align: justify; line-height: 1.2; margin-left: 25px;\"><br></p>"
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 13,
+    "fields": {
+        "thing": 6,
+        "title": "Step 02: 3D Printed Parts",
+        "instructions": "<p><img src=\"https://res.cloudinary.com/dfssxyagm/image/upload/v1/media/django-summernote/2024-03-06/1a1ebb57-cbdf-48c5-b0bf-6e4683ec82aa_qhcfjg\" style=\"width: 50%; float: left;\" class=\"note-float-left\"></p><p style=\"text-align: justify; line-height: 1.2; color: rgb(85, 85, 85); font-family: myriad-pro, helvetica, arial, sans-serif; font-size: 14px;\">The base idea behind this project is very simple: we need a frame for mounting the filter in front of the fan, and a base to raise it up from the table. However, I like to take great care of the aesthetics and design of my projects. So I spent some time designing on Fusion 360 the various parts with which I will build the fume extractor, to make it resemble a professional tool. I 3D printed all the parts, using black and orange PLA, following the color scheme of Black&amp;Decker tools. The STL files for 3D printing are below.</p><p style=\"text-align: justify; line-height: 1.2; color: rgb(85, 85, 85); font-family: myriad-pro, helvetica, arial, sans-serif;font-size: 14px;\">The parts that need to be 3D printed include the box in which the fan will be placed, the base, in which the power switch will be put, and its cover. I also printed the two grids that will be used to mount the filter, a small border and other parts, including two knobs, four feet and two spacers.<br><br></p><hr>"
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 14,
+    "fields": {
+        "thing": 6,
+        "title": "Step 03: Connecting the Fan",
+        "instructions": "<p><img src=\"https://res.cloudinary.com/dfssxyagm/image/upload/v1/media/django-summernote/2024-03-06/4f489816-5145-4778-8bd9-468d218feb13_usb8n9\" style=\"width: 50%; float: left;\" class=\"note-float-left\"></p><p style=\"text-align: justify; line-height: 1.2; color: rgb(85, 85, 85); font-family: myriad-pro, helvetica, arial, sans-serif; font-size: 14px;\">Before mounting the fan in its enclosure, we need to think about the electrical cable that will connect it to the base, where the power switch will be. We could leave the original two wires from the fan, but in my opinion the look of them is a bit too thin and they do not fit well the design. So I cut the positive (red) and negative (black) wires of the fan quite short and soldered them to the two wires of a microphone audio cable, which is thicker and therefore in my opinion adds something to the final aesthetics. It is important to note here that I chose that cable just because I had it lying around, but every thick cable with at least two pins should work fine. I protected the soldering with heat shrink tubing, and by drilling a hole in the plastic reinforcement of a side of the fan I was able to fit the connection in one of its corners.<br><br><br></p><hr>"
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 15,
+    "fields": {
+        "thing": 6,
+        "title": "Step 04: Securing the Fan",
+        "instructions": "<p><img src=\"https://res.cloudinary.com/dfssxyagm/image/upload/v1/media/django-summernote/2024-03-06/c76e1181-6138-4a28-ab14-f11d8b6673bc_bkyczn\" style=\"width: 50%; float: left;\" class=\"note-float-left\"></p><p style=\"text-align: justify; line-height: 1.2; color: rgb(85, 85, 85); font-family: myriad-pro, helvetica, arial, sans-serif; font-size: 14px;\">Now that the fan is connected to the cable, I took the 3D printed piece where the fan will be put. Inside there are two tabs to secure the fan, that have a hexagonal space where I put an M4 nut. Before mounting the fan, I also put two M6x30 mm bolts in the holes on both sides, that also have an hexagonal space to keep the bolt's head flush with the surface. These bolts will be used to attach the fan to the stand while allowing us to adjust the angle of the fan, and they will be locked by the fan once it is mounted. After running the cable through the hole, I inserted the fan into the 3D printed piece, holding the air outlet to the outside. With two M4 screws, I secured the fan to the nuts that I had put in the two tabs of the 3D printed piece.<br><br><br><br></p><hr>"
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 16,
+    "fields": {
+        "thing": 6,
+        "title": "Step 05: Adding Small Details",
+        "instructions": "<img src=\"https://res.cloudinary.com/dfssxyagm/image/upload/v1/media/django-summernote/2024-03-06/d8f0400b-0523-4e59-80ee-788421215f5a_a7p0uh\" style=\"width: 50%; float: left;\" class=\"note-float-left\"><p style=\"text-align: justify; line-height: 1.2; color: rgb(85, 85, 85); font-family: myriad-pro, helvetica, arial, sans-serif; font-size: 14px;\">Now that the fan is mounted I glued a 3D printed border on the back of the part that holds the fan, using some super glue, although you can also use hot glue. The border will match the contrast between orange and black that will be created by the filter, that will be put on the other side. Of course, this part only has aesthetic purpose.</p><p style=\"text-align: justify; line-height: 1.2; color: rgb(85, 85, 85); font-family: myriad-pro, helvetica, arial, sans-serif; font-size: 14px;\"><br><br><br><br><br><br><br><br><br></p><hr>"
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 17,
+    "fields": {
+        "thing": 6,
+        "title": "Step 06: Mounting the Filter",
+        "instructions": "<p><img src=\"https://res.cloudinary.com/dfssxyagm/image/upload/v1/media/django-summernote/2024-03-06/8867eea7-a1be-4e0c-959d-9f8b219cb495_skxofc\" style=\"width: 50%; float: left;\" class=\"note-float-left\"></p><p style=\"text-align: justify; line-height: 1.2; color: rgb(85, 85, 85); font-family: myriad-pro, helvetica, arial, sans-serif; font-size: 14px;\">On the side from which the fan draws air, we will need to mount the filter that will absorb the fumes created by the soldering iron. First I put four M3 threaded inserts in the 4 holes that are on the front of the part in which we just mounted the fan, heating them with my soldering iron. For this step, it is better to use a soldering iron with temperature adjustment set to around 230°C.</p><p style=\"color: rgb(85, 85, 85); font-family: myriad-pro, helvetica, arial, sans-serif; text-align: justify;font-size: 14px; line-height: 1.2;\">Using the smaller 3D printed grid as a template, I cut a rectangle from the carbon filter. I inserted the filter in the bigger 3D printed grid that has an edge around, and on top I put the other grid. Using two grids with the filter in between prevents the filter from being sucked in by the fan, and keeps it firmly in place</p><p style=\"color: rgb(85, 85, 85); font-family: myriad-pro, helvetica, arial, sans-serif; text-align: justify; font-size: 14px; line-height: 1.2;\">I mounted the filter in front of the fan using four M3 screws, screwed into the threaded inserts we have taken care of a few moments ago.</p><hr>"
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 18,
+    "fields": {
+        "thing": 6,
+        "title": "Step 07: Preparing the Base",
+        "instructions": "<img src=\"https://res.cloudinary.com/dfssxyagm/image/upload/v1/media/django-summernote/2024-03-06/0649da89-ece1-468f-951e-0e9180d53378_jpua1f\" style=\"width: 50%; float: left;\" class=\"note-float-left\"><p style=\"text-align: justify; line-height: 1.2; color: rgb(85, 85, 85); font-family: myriad-pro, helvetica, arial, sans-serif; font-size: 14px;\">Now the block with the fan and the filter is finished, and we can move on to the base and the stand that will hold the fume extractor over our work area. In the base there will be the power switch, an LED and the connector for connecting the power supply.</p><p style=\"text-align: justify; line-height: 1.2; color: rgb(85, 85, 85); font-family: myriad-pro, helvetica, arial, sans-serif; font-size: 14px;\">Also in this part I put four M3 threaded inserts, which we will use to screw the bottom cover on. Then I ran the cable coming from the fan through the hole in the base. In the base I also put a power switch, which we will later use to control the fan.<br><br><br><br><br><br><br></p><hr>"
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 19,
+    "fields": {
+        "thing": 6,
+        "title": "Step 08: Making the Stand",
+        "instructions": "<img src=\"https://res.cloudinary.com/dfssxyagm/image/upload/v1/media/django-summernote/2024-03-06/3e146d01-e475-4ef1-adb1-34c9778acd9a_wic0c9\" style=\"width: 50%; float: left;\" class=\"note-float-left\"><p style=\"text-align: justify; line-height: 1.2; color: rgb(85, 85, 85); font-family: myriad-pro, helvetica, arial, sans-serif; font-size: 14px;\">To join the base to the fan, I will use two rectangular aluminium profiles. Specifically, I used a 20x10 mm profile, of which I cut two 20 cm pieces using a manual mitre saw, which allows you to set an angle at which to make the cuts, which then come out quite accurate. After cutting, I filed the edges of the aluminium profiles. In both pieces I drilled two 6 mm holes, one 30 mm from one side and the other one 10 mm apart from the other side. To make the holes more precisely, I used a cheap drill press, but a cordless drill should work fine too.</p><p style=\"text-align: justify; line-height: 1.2; color: rgb(85, 85, 85); font-family: myriad-pro, helvetica, arial, sans-serif; font-size: 14px;\">I attached the two aluminium pieces to the two sides of the base, with two M6 bolts with round head; the small channel on each side of the base will keep them right-angle, without the need of using two bolts. After securing one aluminium profile to the base, I inserted in its hole one of the two bolts that are on the sides of the fan block, putting in between a 3D printed spacer. With another spacer on the other side, I then secured the second aluminium profile to the base.</p><hr>"
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 20,
+    "fields": {
+        "thing": 6,
+        "title": "Step 09: Making the Fume Extractor Adjustable",
+        "instructions": "<img src=\"https://res.cloudinary.com/dfssxyagm/image/upload/v1/media/django-summernote/2024-03-06/7b416484-13a1-4171-995a-d9bd011c6b61_zhbmmr\" style=\"width: 50%; float: left;\" class=\"note-float-left\"><p style=\"text-align: justify; line-height: 1.2; color: rgb(85, 85, 85); font-family: myriad-pro, helvetica, arial, sans-serif; font-size: 14px;\">Now that we have mounted it, the fume extractor is free to rotate. So I 3D printed two knobs, into which I pressed an M6 nut using a hammer. I screwed these knobs to the two bolts on which the fume extractor rotates. This way, by loosening the knobs we can adjust the angle of the fume extractor as we need, which is something I think is very useful. Instead, by tightening the two knobs, the fan is locked in the position we have put it in.<br><br><br><br><br><br><br><br><br></p><hr>"
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 21,
+    "fields": {
+        "thing": 6,
+        "title": "Step 10: Electrical Connections",
+        "instructions": "<img src=\"https://res.cloudinary.com/dfssxyagm/image/upload/v1/media/django-summernote/2024-03-06/d5078964-4733-4226-8df8-2738e53f27af_tnfc2r\" style=\"width: 50%; float: left;\" class=\"note-float-left\"><p style=\"text-align: justify; line-height: 1.2; color: rgb(85, 85, 85); font-family: myriad-pro, helvetica, arial, sans-serif; font-size: 14px;\">At this point, we can move on to the electrical connections. First, I stripped the cable that goes from the fan into the base. Next to the switch I also decided to put a status LED, both because on electronic devices there is always an LED and because it looks cool. I chose a blue LED, and soldered a 1 K resistor to the positive leg for limiting the current. To power the LED I soldered a positive wire to the resistor, and a negative wire to the negative leg of the LED. I mounted the LED in a hole I made in the base and fixed it with some hot glue.</p><p style=\"text-align: justify; line-height: 1.2; color: rgb(85, 85, 85); font-family: myriad-pro, helvetica, arial, sans-serif; font-size: 14px;\">Then I soldered the positive of the fan along with the positive of the LED to one of the two pins of the switch. To the other pin of the switch I soldered a piece of wire. For connecting the power supply I will use a barrel connector that fits the one that's on the power supply. After finding positive and negative on the connector with a digital multimeter, I connected the negative of the fan and the negative of the LED to the negative of the connector, and to the positive I soldered the wire coming from the switch. I mounted the connector in the rectangular space on the back of the base with some hot glue.</p><hr>"
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 22,
+    "fields": {
+        "thing": 6,
+        "title": "Step 11: Closing the Base",
+        "instructions": "<img src=\"https://res.cloudinary.com/dfssxyagm/image/upload/v1/media/django-summernote/2024-03-06/aa36be2a-f09c-4e38-b182-1a97325e638f_yrf42r\" style=\"width: 50%; float: left;\" class=\"note-float-left\"><p style=\"text-align: justify; line-height: 1.2; color: rgb(85, 85, 85); font-family: myriad-pro, helvetica, arial, sans-serif; font-size: 14px;\">Now that the electrical connections are finished, I closed the base with its cover, using M3 screws. With these screws I also attached four small feet, again 3D printed, to lift the fume extractor from the table a little bit creating a small shadow, and to prevent the head of the screw from touching directly the workbench.<br><br><br><br><br><br><br><br><br><br><br></p><hr>"
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 23,
+    "fields": {
+        "thing": 6,
+        "title": "Step 12: Finished!",
+        "instructions": "<img src=\"https://res.cloudinary.com/dfssxyagm/image/upload/v1/media/django-summernote/2024-03-06/dd27c518-748c-4fd3-9f72-a7df232dea36_kbgxsb\" style=\"width: 50%; float: left;\" class=\"note-float-left\"><p style=\"text-align: justify; line-height: 1.2; color: rgb(85, 85, 85); font-family: myriad-pro, helvetica, arial, sans-serif; font-size: 14px;\">Now I just needed to connect the power supply to an outlet and turn on the fume extractor. The fume extractor works really well, and it moves a lot of air. I've tried soldering with the fume extractor turned on, and all the fumes were sucked in, even keeping the aspirator at some distance from the soldering iron. Obviously even tough the extractor filters the fumes, at least partially, I still recommend that you always solder in a well-ventilated place, maybe with an open window.<br><br><br><br><br><br></p><hr><p style=\"text-align: justify; line-height: 1.2; color: rgb(85, 85, 85); font-family: myriad-pro, helvetica, arial, sans-serif; font-size: 20px;\">I hope you found this guide interesting and maybe useful. To see more details about this project, watch the&nbsp; <a href=\"https://youtu.be/g9PiSVSLIrc\" rel=\"nofollow noopener noreferrer\" style=\"font-family: myriad-pro, helvetica, arial, sans-serif; font-size: 20px; background-color: rgb(255, 255, 255); color: rgb(185, 78, 0); text-decoration-line: underline; max-width: 100%; overflow-wrap: break-word; cursor: pointer; word-break: break-word; hyphens: auto;\">video on my YouTube channel</a><span style=\"color: rgb(85, 85, 85); font-family: myriad-pro, helvetica, arial, sans-serif; font-size: 20px;\">. Bye!&nbsp;</span><br></p><hr>"
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 24,
+    "fields": {
+        "thing": 2,
+        "title": "Step 01: Get material",
+        "instructions": ""
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 25,
+    "fields": {
+        "thing": 2,
+        "title": "Step 02: 3D Print parts",
+        "instructions": ""
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 27,
+    "fields": {
+        "thing": 2,
+        "title": "Step 03: Build Eye Ball",
+        "instructions": ""
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 28,
+    "fields": {
+        "thing": 23,
+        "title": "Step 01: Download the reed-dryer-base stl file",
+        "instructions": "<p style=\"line-height: 1;\" class=\"\"><span style=\"font-family: &quot;Times New Roman&quot;;\">This file can be found at the following link:</span></p><p style=\"line-height: 1;\" class=\"\"><a href=\"https://github.com/Juanma1313/dys/blob/main/media/things/reed-dryer-base.stl\" target=\"_blank\"><i><span style=\"font-family: &quot;Times New Roman&quot;;\">reed-dryer-base.stl</span></i></a></p><hr><p style=\"line-height: 1;\" class=\"\"><br></p>"
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 29,
+    "fields": {
+        "thing": 23,
+        "title": "Step 02: 3D Print the reed-dryer-base file",
+        "instructions": "<p><span style=\"font-family: &quot;Times New Roman&quot;;\">The following parameters are to be used for successfully printing this file:</span></p><ul><li><span style=\"font-family: &quot;Times New Roman&quot;;\">Use an FDM 3d printer using 1.7mm filament and 4mm hot end.</span></li><li><span style=\"font-family: &quot;Times New Roman&quot;;\">Use at least 100gr EPTG+ 1.7 filament (transparent if possible)</span></li><li><span style=\"font-family: &quot;Times New Roman&quot;;\">Use the following printer settings:</span></li><li><ul><li style=\"margin-left: 50px;\"><span style=\"font-family: &quot;Times New Roman&quot;;\">bottom_fill_pattern = concentric</span><br></li><li style=\"margin-left: 50px;\"><span style=\"font-family: &quot;Times New Roman&quot;;\">bottom_solid_layers = 4</span></li><li style=\"margin-left: 50px;\"><span style=\"font-family: &quot;Times New Roman&quot;;\">bottom_solid_min_thickness = 2</span></li><li style=\"margin-left: 50px;\"><span style=\"font-family: &quot;Times New Roman&quot;;\">fill_density = 15%</span><br></li><li style=\"margin-left: 50px;\"><span style=\"font-family: &quot;Times New Roman&quot;;\">fill_pattern = rectilinear</span></li><li style=\"margin-left: 50px;\"><span style=\"font-family: &quot;Times New Roman&quot;;\">first_layer_height = 0.12</span><br></li><li style=\"margin-left: 50px;\"><span style=\"font-family: &quot;Times New Roman&quot;;\">layer_height = 0.24</span><br></li><li style=\"margin-left: 50px;\"><span style=\"font-family: &quot;Times New Roman&quot;;\">perimeters = 3</span><br></li><li style=\"margin-left: 50px;\"><span style=\"font-family: &quot;Times New Roman&quot;;\">support_material = 0</span><br></li><li style=\"margin-left: 50px;\"><span style=\"font-family: &quot;Times New Roman&quot;;\">top_fill_pattern = concentric</span><br></li><li style=\"margin-left: 50px;\"><span style=\"font-family: &quot;Times New Roman&quot;;\">top_solid_layers = 4</span></li></ul></li></ul><hr><p><br></p><p><br></p>"
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 30,
+    "fields": {
+        "thing": 24,
+        "title": "Step 01: Download the reed-dryer-base stl file",
+        "instructions": "<p style=\"line-height: 1;\" class=\"\"><span style=\"font-family: &quot;Times New Roman&quot;;\">This file can be found at the following link:</span></p><p style=\"line-height: 1;\" class=\"\"><a href=\"https://github.com/Juanma1313/dys/blob/main/media/things/reed-dryer-mandrel.stl\" target=\"_blank\">reed-dryer-mandrel.stl</a></p><hr><p style=\"line-height: 1;\" class=\"\"><br></p>"
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 31,
+    "fields": {
+        "thing": 24,
+        "title": "Step 02: 3D Print the reed-dryer-mandrel stl",
+        "instructions": "<p><span style=\"font-family: &quot;Times New Roman&quot;;\">The following parameters are to be used for successfully printing this file:</span></p><ul><li><span style=\"font-family: &quot;Times New Roman&quot;;\">Use an FDM 3d printer using 1.7mm filament and 4mm hot end.</span><br></li><li><span style=\"font-family: &quot;Times New Roman&quot;;\">Use at least 10gr EPTG+ 1.7 filament (transparent if possible)</span></li><li><span style=\"font-family: &quot;Times New Roman&quot;;\">Use the following printer settings:</span></li><li><ul><li style=\"margin-left: 50px;\"><span style=\"font-family: &quot;Times New Roman&quot;;\">bottom_solid_min_thickness = 2</span><br></li><li style=\"margin-left: 50px;\"><span style=\"font-family: &quot;Times New Roman&quot;;\">fill_density = 100%</span><br></li><li style=\"margin-left: 50px;\"><span style=\"font-family: &quot;Times New Roman&quot;;\">first_layer_height = 0.12</span><br></li><li style=\"margin-left: 50px;\"><span style=\"font-family: &quot;Times New Roman&quot;;\">layer_height = 0.12</span><br></li><li style=\"margin-left: 50px;\"><span style=\"font-family: &quot;Times New Roman&quot;;\">perimeters = 3</span><br></li><li style=\"margin-left: 50px;\"><span style=\"font-family: &quot;Times New Roman&quot;;\">support_material = 0</span></li></ul></li></ul><hr><p><br></p><p><br></p>"
+    }
+},
+{
+    "model": "diy.instructions",
+    "pk": 32,
+    "fields": {
+        "thing": 22,
+        "title": "Building the Reed Dryer",
+        "instructions": "<p>Place a printed reed-dryer-mandrel inside a reed-drier-base hole and use a screw to fixe it tight in its vertical position. </p><p>Repeat this process for the 12 mandrels and.. </p><p><b>you are finished!</b></p><h2 class=\"\"><b style=\"\">Enjoy your new Bassoon Reed Dryer.&nbsp;</b></h2>"
+    }
+}
+]
