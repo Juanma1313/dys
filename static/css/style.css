@@ -150,6 +150,43 @@
     border: none;
 }
 
+.btn-reply,
+.btn-submit {
+    background-color: #3c7e07;
+    color: #FFF;
+}
+
+.btn-reply:hover,
+.btn-reply:active,
+.btn-submit:hover,
+.btn-submit:active {
+    background-color: #00380e;
+    color: #FFF;
+}
+
+.btn-comment-edit {
+    background-color: #184981;
+    color: #fff;
+}
+.btn-comment-edit:hover,
+.btn-comment-edit:active {
+    background-color: #0400f8;
+    color: #fff;
+}
+
+
+.btn-comment-delete {
+    color: #fff;
+    background: #E84610;
+}
+
+.btn-comment-delete:hover,
+.btn-comment-delete:active {
+    color: #fff;
+    background: #e81010;
+}
+
+
 /* Featured Image */
 .index-thing-image {
     height: 500px;
