@@ -31,33 +31,40 @@
                     {{ thing.description | safe }}
                 </p>
                 <div class="row">
-                    <!--Thing Likes-->
+                    <!--Thing comments count-->
+                    <div class="col-3">
+                        <strong class="text-secondary">
+                        <A href="#comments_section"><i class="far fa-comments"></i> <span>{{ comment_count }}</span></A>
+                        </strong>
+                    </div>
+        
+                    <!--Thing Likes count-->
                     <div class="col-3">
                         <strong class="text-secondary">
                             {% if user.is_authenticated %}
-                            <form class="d-inline" action="{% url 'thing_like' thing.slug %}" method="POST">
-                                {% csrf_token %}
-                                {% if liked %}
-                                <button type="submit" name="thing_id" value="{{thing.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
-                                {% else %}
-                                <button type="submit" name="thing_id" value="{{thing.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
-                                {% endif %}
-                            </form>
+                                <form class="d-inline" action="{% url 'thing_like' thing.slug %}" method="POST">
+                                    {% csrf_token %}
+                                    {% if liked %}
+                                    <button type="submit" name="thing_id" value="{{thing.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
+                                    {% else %}
+                                    <button type="submit" name="thing_id" value="{{thing.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
+                                    {% endif %}
+                                </form>
                             {% else %}
-                            <span class="text-secondary"><i class="far fa-heart"></i></span>
+                                <span class="text-secondary"><i class="far fa-heart"></i></span>
                             {% endif %}
                             <span>{{ thing.number_of_likes }}</span>
                         </strong>
                     </div>
                     <!--Thing Components count-->
-                    <div class="col-4">
+                    <div class="col-3">
                         {% with components.count as total_components %}
                         <strong class="text-secondary">Comp.
                         {{ total_components }}</strong>
                         {% endwith %}
                     </div>
                     <!--Thing instructions count-->
-                    <div class="col-4">
+                    <div class="col-3">
                         {% with instructions.count as total_instructions %}
                         <strong class="text-secondary">Instr.
                         {{ total_instructions }}</strong>
@@ -141,6 +148,79 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col">
+            <hr>
+        </div>
+    </div>
+    <!-- COMMENTS -->
+    <div class="row" id="comments_section">
+        <div class="col-md-8 card mb-4  mt-3 ">
+            <h3>Comments:</h3>
+            {% if user.is_authenticated %}
+                <form action="" method="POST" id="commentForm" class="comment_form">
+                    <div>
+                        {{ comment_form.comment }}
+                    </div>
+                        {% csrf_token %} 
+                        <button id="submitCommentButton" type="submit" class="btn-submit btn btn-sm">Post New Comment</button>
+                </form>
+            {% else %} 
+                <h3>You need to Sign In to add comments</h3> 
+            {% endif %}
+            <hr>
+            {% for comment in comments %}
+                {% if comment.is_parent %}
+                    <b>{{comment.created_on}}</b>
+                    <h4><b>{{ comment.author }}: </b> <span id="comment{{ comment.id }}">{{ comment.comment}}</span>
+                        {% if user.is_authenticated %}
+                            {% if request.user.is_superuser or request.user.is_staff or request.user == comment.author %}
+                                <button class="btn btn-sm btn-comment-delete" comment_id="{{ comment.id }}">Delete</button>
+                                <button class="btn btn-sm btn-comment-edit" comment_id="{{ comment.id }}">Edit</button>
+                            {% endif %}
+                            <button id="submitReplyButton{{ comment.pk }}" comment_id="{{ comment.pk }}" name="parent" class="btn btn-sm btn-reply">Reply</button>
+                        {% endif %}
+                    </h4> 
+                {% endif %} 
+                {% for reply in comment.children %}
+                    <b>&nbsp; &nbsp; &nbsp; &nbsp;{{reply.created_on}}</b>
+                    <h5>&nbsp; &nbsp; &nbsp; <b>{{ reply.author }} : </b> <span id="comment{{ reply.id }}">{{ reply.comment }}</span>
+                        {% if request.user.is_superuser or request.user.is_staff or request.user == reply.author %}
+                            <button class="btn btn-sm btn-comment-delete" comment_id="{{ reply.id }}">Delete</button>
+                            <button class="btn btn-sm btn-comment-edit" comment_id="{{ reply.id }}">Edit</button>
+                        {% endif %}
+                    </h5>
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <hr>
+        </div>
+    </div>
+</div>
+<!-- Delete confirmation modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Delete comment?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete your comment? This action cannot be undone.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <a id="deleteConfirm" href="#" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    </div>
 </div>
 
 {% endblock content %}
+
+{% block extras %}
+<script src="{% static 'js/comments.js' %}"></script>
+{% endblock %}
