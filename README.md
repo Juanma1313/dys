@@ -2,6 +2,8 @@
 # ![DIY Site logo](static/diy-logo.png) **DIY Site**
 
 ***
+> [!IMPORTANT]
+> An extension to the project has been added at the end of this document to meet CI's requirements.
 
 # Introduction
 
@@ -105,6 +107,9 @@ Heroku](https://dys-1c0dad79f0a0.herokuapp.com/)</span>
 
 - [Acknowledgements](#acknowledgements)
 
+- [Project EXTENSION at customer's request](#project-extension-at-customers-request)
+  - [Customer requirements for users extension](#customer-requirements-for-users-extension)
+  - [Development plan extension](#development-plan-extension)
 ##   
 
 # User experience (UX)
@@ -182,7 +187,6 @@ stories list for the initial delivery iteration backlog.
 | 39   | 33    | Change state published/Draft a DIY project        |           |         | x       | x     |
 | 39   | 34    | Change state published/Draft a component          |           |         | x       | x     |
 
-###   
 
 ### Other requirements
 
@@ -1387,6 +1391,8 @@ likes
 - [x] Task 3 - Modify DIY Project detail template to handle DIY likes
 
 ###### Story Points: 5
+
+
 
 #### Web Site Sketches
 
@@ -2690,3 +2696,167 @@ you to run the application in your local development environment:
     my case.
 
   - StackOverflow with some problems specifically with Python and Django
+
+##
+##
+
+## Project EXTENSION at customer's request
+
+After submitting the project for customer review, the Project Owner has pointed out that some functionality was missing. This extension is added to address this shortcoming.
+
+### Customer requirements for users extension
+
+As part of the customer's requirements, new CRUD functionalities are added to create a "comment & reply" system integrated to the existing development.
+The following is the list of the requirements added to the development 
+
+|      |       |                                                   |           |         |         |       |
+| ---- | ----- | ------------------------------------------------- | --------- | ------- | ------- | ----- |
+| Epic | Story | Requirements for users                            | Anonymous | Regular | Creator | Admin |
+| 42   | 43    | view list of comments for a selected DIY project  |     X     |    x    |    x    |   x   |
+| 42   | 44    | Create a comment for a selected DIY project       |           |    x    |    x    |   x   |
+| 42   | 45    | Modify your own comment for a selected DIY project|           |    x    |    x    |   x   |
+| 42   | 46    | Modify any comment for a selected DIY project     |           |         |    x    |   x   |
+| 42   | 47    | Delete your own comment for a selected DIY project|           |    x    |    x    |   x   |
+| 42   | 48    | Delete any comment for a selected DIY project     |           |         |    x    |   x   |
+| 42   | 43    | view list of replies for a selected comment       |     X     |    x    |    x    |   x   |
+| 42   | 44    | Create a reply for a selected comment             |           |    x    |    x    |   x   |
+| 42   | 45    | Modify your own reply for a selected comment      |           |    x    |    x    |   x   |
+| 42   | 46    | Modify any reply for a selected comment           |           |         |    x    |   x   |
+| 42   | 47    | Delete your own reply for a selected comment      |           |    x    |    x    |   x   |
+| 42   | 48    | Delete any reply for a selected comment           |           |         |    x    |   x   |
+
+
+### Development plan extension
+Only one EPIC has been defined for this extension which covers the full "Comment & Reply" system development.
+
+#### [#42](https://github.com/Juanma1313/DYS/issues/42) EPIC: Comment & Reply system for DIY Projects
+
+As a **registered user**, I can **add/modify/delete Comments and Replies**, so that **any user can review the comments and replies for a particular DIY Project**
+
+##### [#43](https://github.com/Juanma1313/DYS/issues/43) USER STORY: View the list of Comments/Replies for a selected DIY project
+
+As **user**, I can **view the list of Comments/Replies assigned to a particular DIY Project**,
+so that **I can read what other users have to say about the project**
+
+###### Acceptance Criteria
+- Acceptance Criteria 1
+**Given** that I am a user
+**When** I am viewing a DIY Project details
+**Then** I can view the list of all the comments and replies about the project
+
+###### Tasks
+- [x] Task 1 – Create the Comment object model
+- [x] Task 2 – Create the CommentAdmin class for the admin pages 
+- [x] Task 3 – Modify the ThingDetail class view to include Comments 
+- [x] Task 4 – Modify the thing_detail.html template to include comments list
+
+###### Story Points: 8
+
+##### [#44](https://github.com/Juanma1313/DYS/issues/44) USER STORY: Create a Comment/Reply for a selected DIY project
+
+As **registered user**, I can **create a Comment/Reply assigned to a particular DIY Project**,
+so that **I can provide opinion and information for other users**
+
+###### Acceptance Criteria
+- Acceptance Criteria 1
+**Given** that I am a registered user
+**When** I am viewing a DIY Project details
+**Then** I can create a new comment 
+**Then** I can create a Reply for an existing Comment
+
+###### Tasks
+- [x] Task 1 – Modify the ThingDetail class view to handle Comments creation 
+- [x] Task 2 – Modify the thing_detail.html template to handle comments creation
+
+###### Story Points: 5
+
+##### [#45](https://github.com/Juanma1313/DYS/issues/45) USER STORY: Modify your own comment for a selected DIY project
+
+As **registered user**, I can **modify my own Comment/Reply assigned to a particular DIY Project**,
+so that **I can change my opinion and information**
+
+###### Acceptance Criteria
+- Acceptance Criteria 1
+**Given** that I am a registered user viewing the comments section for a DIY Project
+**When** I press the edit button of one my comments (or replies)
+**Then** I can modify the text content and update it 
+
+###### Tasks
+- [x] Task 1 – Create the comment_edit function view to handle Comments editing
+- [x] Task 2 – Modify the thing_detail.html template to handle comments editing
+
+###### Story Points: 5
+
+##### [#46](https://github.com/Juanma1313/DYS/issues/46) USER STORY: Modify any comment/Reply for a selected DIY project
+
+As **creator or administrator user**, I can **modify any Comment/Reply assigned to a particular DIY Project**, so that **I can change the content information**
+
+###### Acceptance Criteria
+- Acceptance Criteria 1
+**Given** that I am a creator or administrator user viewing the comments section for a DIY Project
+**When** I press the edit button of any comment (or reply)
+**Then** I can modify the text content and update it 
+
+###### Tasks
+- [x] Task 1 – modify the comment_edit function view to limit comments editing privileges
+- [x] Task 2 – Modify the thing_detail.html template to limit comments editing privileges
+
+###### Story Points: 3
+
+##### [#47](https://github.com/Juanma1313/DYS/issues/47) USER STORY: Delete your own comment for a selected DIY project
+
+As **registered user**, I can **delete my own Comment/Reply assigned to a particular DIY Project**, so that **I can remove completely the comment information and all the associated replies**
+
+###### Acceptance Criteria
+- Acceptance Criteria 1
+**Given** that I am a registered user, viewing the comments section for a DIY Project
+**When** I press the delete button of one of my comments (or replies)
+**Then** A modal window will request deletion confirmation
+
+- Acceptance Criteria 2
+**Given** that I am requested to confirm a comment deletion
+**When** I press the delete button
+**Then** the comment and all associated replies are removed from the system
+
+###### Tasks
+- [x] Task 1 – Create the comment_delete function view to handle Comments deletion
+- [x] Task 2 – Modify the thing_detail.html template to have a modal window for comments deletion confirmation
+- [x] Task 2 – Modify the thing_detail.html template to handle comments deletion
+
+###### Story Points: 5
+
+##### [#48](https://github.com/Juanma1313/DYS/issues/48) USER STORY: Delete any comment for a selected DIY project
+
+As **creator or administrator user**, I can **delete any Comment/Reply assigned to a particular DIY Project**, so that **I can remove completely the comment information and all the associated replies**
+
+###### Acceptance Criteria
+- Acceptance Criteria 1
+**Given** that I am a creator or administrator user viewing the comments section for a DIY Project
+**When** I press the delete button of any comment (or reply)
+**Then** A modal window will request deletion confirmation
+
+- Acceptance Criteria 2
+**Given** that I am requested to confirm a comment deletion
+**When** I press the delete button
+**Then** the comment and all associated replies are removed from the system
+
+###### Tasks
+- [x] Task 1 – modify the comment_delete function view to limit comments deleting privileges
+- [x] Task 2 – Modify the thing_detail.html template to limit comments deleting privileges
+
+###### Story Points: 3
+
+
+#### Database Extension
+
+The following drawing is a ERD representation of the database including the new Comments functionality. It was produced by pgAdmin4 ERD tool, and acomodated to feet in a small drawing.
+For further explanation of the tables, follow this [link](#database)
+
+![](assets/media/image30.png)
+
+The table named `diy_comments` stores all the comments and replies posted by users about DIY projects. 
+A special detail of the implementation is that this table, like the `diy_thing` has a cyclic reference to itself in order to accommodate a tree
+structure for the replies, which in turn are also comments themselves.
+This table maintains three "one to many" relationships with the `auth_user`, `diy_thing` tables and with itself. So any registered user will be able to create any number of comments on any project and any number of replies to any comment.
+
+

@@ -215,7 +215,6 @@ class ReplyInLine(admin.StackedInline):
     def created(self, instance):
         return instance.created_on
 
-
     # organize the admin inline forms fields for editting Components
     fieldsets = (
         ('Replay', {
@@ -251,7 +250,6 @@ class CommentAdmin(admin.ModelAdmin):
         if instance.parent is None:
             return "COMMENT"
         else:
-            #return instance.parent
             return "REPLAY"
 
     # organize the list fields of Things
