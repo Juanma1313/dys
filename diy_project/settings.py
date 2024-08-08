@@ -66,12 +66,12 @@ LOGIN_REDIRECT_URL = '/'
 LOGUT_REDIRECT_URL = '/'
 
 MESSAGE_TAGS = {
-        messages.DEBUG: 'alert-info',
-        messages.INFO: 'alert-info',
-        messages.SUCCESS: 'alert-success',
-        messages.WARNING: 'alert-warning',
-        messages.ERROR: 'alert-danger',
-    }
+    messages.DEBUG: 'alert-info',
+    messages.INFO: 'alert-info',
+    messages.SUCCESS: 'alert-success',
+    messages.WARNING: 'alert-warning',
+    messages.ERROR: 'alert-danger',
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -108,7 +108,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'diy_project.wsgi.application'
 
 DATABASES = {
-   'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 # Password validation
@@ -116,16 +116,16 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',  # noqa: E501
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',  # noqa: E501
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',  # noqa: E501
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',  # noqa: E501
     },
 ]
 
@@ -139,7 +139,8 @@ AUTHENTICATION_BACKENDS = [
 # allauth custom configuration settings
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
-ACCOUNT_EMAIL_VERIFICATION = os.environ.get('ACCOUNT_EMAIL_VERIFICATION', 'mandatory')
+ACCOUNT_EMAIL_VERIFICATION = os.environ.get(
+    'ACCOUNT_EMAIL_VERIFICATION', 'mandatory')
 ACCOUNT_PRESERVER_USERNAME_CASING = False
 ACCOUNT_USERNAME_REQUIRED = True
 
@@ -170,7 +171,7 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 
 STATIC_URL = '/static/'
 
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'  # noqa: E501
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
@@ -188,15 +189,16 @@ if DEBUG:
     import django
     print(f"Django Version: {django.get_version()}")
 
-# Fix Bug in django v3.2.24 - It cannot handle application password for smtp server
+# Fix Bug in django v3.2.24 -It cannot handle applic. password for smtp server
 #  Fix: django v4.2 solves the problem, but it is incompatible with
 #       PostgreSQL V9 user in ElephantSQL service.
 # Notes: This fix should be removed after migrating to Django v4.2
-#       This fix is no longer needed when upgaded to python v3.9.18 (Unknown reasons)
+#       This fix is no longer needed after upgaded to python v3.9.18
+#       (Unknown reasons)
 # if DEPLOYED:
 #    from shutil import copyfile
 #    try:
 #        copyfile(src=os.path.join(BASE_DIR, "smtp_v4.2.py"),
-#                 # dst="/app/.heroku/python/lib/python3.12/site-packages/django/core/mail/backends/smtp.py")
+#                 # dst="/app/.heroku/python/lib/python3.12/site-packages/django/core/mail/backends/smtp.py")   # noqa: E501
 #    except Exception as e:
 #        print (f"Error: Exception={e}")

@@ -24,4 +24,4 @@ urlpatterns = [
     path('', include('diy.urls'), name='diy_urls'),
 ]
 
-handler404 = 'diy_project.views.handler404'
+handler404 = 'diy_project.views.handler404'   # noqa: F811
