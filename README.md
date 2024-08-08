@@ -110,6 +110,7 @@ Heroku](https://dys-1c0dad79f0a0.herokuapp.com/)</span>
 - [Project EXTENSION at customer's request](#project-extension-at-customers-request)
   - [Customer requirements for users extension](#customer-requirements-for-users-extension)
   - [Development plan extension](#development-plan-extension)
+  - [Database Extension](#database-extension)
 ##   
 
 # User experience (UX)
